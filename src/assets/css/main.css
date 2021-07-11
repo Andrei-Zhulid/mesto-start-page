@@ -1,3 +1,4 @@
 :root {
-    --background: radial-gradient(53.56% 53.56% at 50% 0%, #4A195B 0%, #320E3F 100%);
+  --background: radial-gradient(53.56% 53.56% at 50% 0%, #4a195b 0%, #320e3f 100%);
+  --layout-max-width: 1152px;
 }
