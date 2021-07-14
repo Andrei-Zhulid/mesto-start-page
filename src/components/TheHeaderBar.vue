@@ -8,17 +8,38 @@
   >
     <v-container class="container">
       <v-row align="center">
-        <v-col class="flex-grow-0">
+        <v-col cols="3">
           <v-img
             :src="require('../assets/logo.svg')"
+            position="left"
+            contain
             alt="Mesto Logo"
             class="logo"
           />
         </v-col>
 
-        <v-spacer></v-spacer>
+        <v-col cols="6">
+          <div class="search px-4 pt-1">
+            <v-text-field
+              :placeholder="data.searchPlaceholder"
+              hide-details
+              v-ripple="false"
+              class="search__input_no-underline"
+            >
+              <v-icon
+                slot="append"
+                size="18"
+                class="pt-1"
+              >mdi-magnify
+              </v-icon>
+            </v-text-field>
+          </div>
+        </v-col>
 
-        <v-col class="flex-grow-0">
+        <v-col
+          cols="3"
+          class="d-flex justify-end"
+        >
           <v-btn
             text
             x-large
@@ -64,6 +85,21 @@ export default {
 
 .logo {
   height: 24px;
+}
+
+.search {
+  background: rgba(255, 255, 255, 0.1);
+  height: 40px;
+  width: 552px;
+}
+
+/deep/ .search__input_no-underline.v-text-field .v-input__slot::before,
+/deep/ .search__input_no-underline.v-text-field .v-input__slot::after {
+  border-style: none;
+}
+
+/deep/ .search__input_no-underline.v-text-field input::placeholder {
+  color: white;
 }
 
 .avatar {
