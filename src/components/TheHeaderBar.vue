@@ -24,8 +24,7 @@
             x-large
             v-ripple="false"
             class="px-0"
-          >
-            {{ data.user.name }}<span class="header__text_secondary-color">.</span>
+          >{{ data.user.name }}<span class="header__text_secondary-color">.</span>
             <v-img
               :src="data.user.avatar"
               :alt="data.user.name"
