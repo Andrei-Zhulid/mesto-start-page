@@ -25,7 +25,7 @@
             v-ripple="false"
             class="px-0"
           >
-            {{ data.user.name }}
+            {{ data.user.name }}<span class="header__text_secondary-color">.</span>
             <v-img
               :src="data.user.avatar"
               :alt="data.user.name"
@@ -53,6 +53,10 @@ export default {
 <style scoped>
 .header {
   background: var(--background);
+}
+
+.header__text_secondary-color {
+  color: var(--secondary-color);
 }
 
 .container {
