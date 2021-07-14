@@ -25,10 +25,10 @@
             v-ripple="false"
             class="px-0"
           >
-            <span>{{ user.name }}</span>
+            {{ data.user.name }}
             <v-img
-              :src="user.avatar"
-              :alt="user.name"
+              :src="data.user.avatar"
+              :alt="data.user.name"
               class="avatar ml-4"
             />
           </v-btn>
@@ -44,7 +44,7 @@ import data from '@/data.json'
 export default {
   data () {
     return {
-      user: data.user,
+      data,
     }
   },
 }
