@@ -3,3 +3,7 @@
   --layout-max-width: 1152px;
   --secondary-color: #00FFC2;
 }
+
+.pointer {
+  cursor: pointer;
+}

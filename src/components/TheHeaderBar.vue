@@ -38,20 +38,18 @@
 
         <v-col
           cols="3"
-          class="d-flex justify-end"
+          class="d-flex justify-end overflow-hidden"
         >
-          <v-btn
-            text
-            x-large
-            v-ripple="false"
-            class="px-0"
-          >{{ data.user.name }}<span class="header__text_secondary-color">.</span>
+          <div class="pointer d-flex align-center font-weight-bold text-no-wrap">{{
+              data.user.name
+            }}<span class="header__text_secondary-color">.</span>
             <v-img
               :src="data.user.avatar"
               :alt="data.user.name"
+              contain
               class="avatar ml-4"
             />
-          </v-btn>
+          </div>
         </v-col>
       </v-row>
     </v-container>
