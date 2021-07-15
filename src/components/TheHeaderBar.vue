@@ -91,12 +91,12 @@ export default {
   width: 552px;
 }
 
-/deep/ .search__input_no-underline.v-text-field .v-input__slot::before,
-/deep/ .search__input_no-underline.v-text-field .v-input__slot::after {
+/deep/ .search__input_no-underline.v-input .v-input__slot::before,
+/deep/ .search__input_no-underline.v-input .v-input__slot::after {
   border-style: none;
 }
 
-/deep/ .search__input_no-underline.v-text-field input::placeholder {
+/deep/ .search__input_no-underline.v-input input::placeholder {
   color: white;
 }
 
