@@ -6,7 +6,7 @@
     dark
     class="header"
   >
-    <v-container class="container">
+    <v-container class="container px-0">
       <v-row align="center">
         <v-col
           md="3"
