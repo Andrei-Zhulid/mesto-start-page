@@ -8,7 +8,18 @@
   >
     <v-container class="container">
       <v-row align="center">
-        <v-col cols="3">
+        <v-col
+          md="3"
+          class="d-flex align-center flex-grow-0"
+        >
+          <v-app-bar-nav-icon class="d-md-none mr-3 ml-n3">
+            <v-img
+              :src="require('../assets/open-menu.svg')"
+              contain
+              alt="Open menu"
+              class="header__icon"
+            />
+          </v-app-bar-nav-icon>
           <v-img
             :src="require('../assets/logo.svg')"
             position="left"
@@ -18,8 +29,8 @@
           />
         </v-col>
 
-        <v-col cols="6">
-          <div class="search px-4 pt-1">
+        <v-col md="6">
+          <div class="search d-none d-sm-flex px-4 pt-1">
             <v-text-field
               :placeholder="data.searchPlaceholder"
               hide-details
@@ -37,17 +48,25 @@
         </v-col>
 
         <v-col
-          cols="3"
-          class="d-flex justify-end overflow-hidden"
+          md="3"
+          class="d-flex justify-end flex-grow-0"
         >
-          <div class="pointer d-flex align-center font-weight-bold text-no-wrap">
-            <span class="header__user-name">{{ data.user.name }}</span>
-            <v-img
-              :src="data.user.avatar"
-              :alt="data.user.name"
-              contain
-              class="avatar ml-4"
-            />
+          <div class="overflow-hidden">
+            <div class="pointer d-flex align-center font-weight-bold text-no-wrap">
+              <v-btn
+                icon
+                class="d-flex d-sm-none mr-n3"
+              >
+                <v-icon>mdi-magnify</v-icon>
+              </v-btn>
+              <span class="header__user-name d-none d-sm-flex">{{ data.user.name }}</span>
+              <v-img
+                :src="data.user.avatar"
+                :alt="data.user.name"
+                contain
+                class="avatar ml-4"
+              />
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -78,11 +97,12 @@ export default {
 
 .header__user-name::after {
   content: ".";
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .container {
   max-width: var(--layout-max-width);
+  min-width: var(--layout-min-width);
 }
 
 .search {
