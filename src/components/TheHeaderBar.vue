@@ -40,9 +40,8 @@
           cols="3"
           class="d-flex justify-end overflow-hidden"
         >
-          <div class="pointer d-flex align-center font-weight-bold text-no-wrap">{{
-              data.user.name
-            }}<span class="header__text_secondary-color">.</span>
+          <div class="pointer d-flex align-center font-weight-bold text-no-wrap">
+            <span class="header__user-name">{{ data.user.name }}</span>
             <v-img
               :src="data.user.avatar"
               :alt="data.user.name"
@@ -73,8 +72,9 @@ export default {
   background: var(--background);
 }
 
-.header__text_secondary-color {
-  color: var(--secondary-color);
+.header__user-name::after {
+  content: ".";
+  color: var(--secondary-color)
 }
 
 .container {
