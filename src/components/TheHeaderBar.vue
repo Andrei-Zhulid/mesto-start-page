@@ -4,7 +4,7 @@
     short
     flat
     dark
-    class="header"
+    class="header px-2"
   >
     <v-container class="container px-0">
       <v-row align="center">
