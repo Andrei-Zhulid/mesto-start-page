@@ -88,7 +88,6 @@ export default {
 .search {
   background: rgba(255, 255, 255, 0.1);
   height: 40px;
-  width: 552px;
 }
 
 /deep/ .search__input_no-underline.v-input .v-input__slot::before,
