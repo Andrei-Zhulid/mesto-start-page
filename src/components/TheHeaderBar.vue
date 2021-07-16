@@ -6,7 +6,7 @@
     dark
     class="header px-2"
   >
-    <v-container class="container px-0">
+    <v-container class="layout-width px-0">
       <v-row align="center">
         <v-col
           md="3"
@@ -98,11 +98,6 @@ export default {
 .header__user-name::after {
   content: ".";
   color: var(--secondary-color);
-}
-
-.container {
-  max-width: var(--layout-max-width);
-  min-width: var(--layout-min-width);
 }
 
 .search {
