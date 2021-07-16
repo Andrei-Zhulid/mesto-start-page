@@ -14,7 +14,7 @@
             position="left"
             contain
             alt="Mesto Logo"
-            class="logo"
+            class="header__icon"
           />
         </v-col>
 
@@ -72,6 +72,10 @@ export default {
   background: var(--background);
 }
 
+.header__icon {
+  height: 24px;
+}
+
 .header__user-name::after {
   content: ".";
   color: var(--secondary-color)
@@ -79,10 +83,6 @@ export default {
 
 .container {
   max-width: var(--layout-max-width);
-}
-
-.logo {
-  height: 24px;
 }
 
 .search {
