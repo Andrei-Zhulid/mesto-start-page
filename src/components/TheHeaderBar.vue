@@ -17,7 +17,7 @@
               :src="require('../assets/open-menu.svg')"
               contain
               alt="Open menu"
-              class="header__icon"
+              class="icon"
             />
           </v-app-bar-nav-icon>
           <v-img
@@ -25,7 +25,7 @@
             position="left"
             contain
             alt="Mesto Logo"
-            class="header__icon"
+            class="icon"
           />
         </v-col>
 
@@ -59,7 +59,7 @@
               >
                 <v-icon>mdi-magnify</v-icon>
               </v-btn>
-              <span class="header__user-name d-none d-sm-flex">{{ data.user.name }}</span>
+              <span class="user-name_dot-after d-none d-sm-flex">{{ data.user.name }}</span>
               <v-img
                 :src="data.user.avatar"
                 :alt="data.user.name"
@@ -91,11 +91,11 @@ export default {
   background: var(--background);
 }
 
-.header__icon {
+.icon {
   height: 24px;
 }
 
-.header__user-name::after {
+.user-name_dot-after::after {
   content: ".";
   color: var(--secondary-color);
 }
