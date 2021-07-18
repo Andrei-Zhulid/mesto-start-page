@@ -2,7 +2,10 @@
   <div class="pa-6">
     <v-container class="layout-width pa-0">
       <v-row>
-        <v-col md="3">
+        <v-col
+          md="3"
+          class="d-none d-md-flex"
+        >
         </v-col>
         <v-col
           md="9"
