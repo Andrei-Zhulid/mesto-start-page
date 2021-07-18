@@ -8,8 +8,19 @@
           md="9"
           cols="12"
         >
+          <TheMainContent/>
         </v-col>
       </v-row>
     </v-container>
   </div>
 </template>
+
+<script>
+import TheMainContent from '@/components/TheMainContent.vue'
+
+export default {
+  components: {
+    TheMainContent,
+  },
+}
+</script>
