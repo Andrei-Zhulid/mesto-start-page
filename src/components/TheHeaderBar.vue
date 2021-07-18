@@ -14,14 +14,14 @@
         >
           <v-app-bar-nav-icon class="d-md-none mr-3 ml-n3">
             <v-img
-              :src="require('../assets/open-menu.svg')"
+              :src="require('@/assets/open-menu.svg')"
               contain
               alt="Open menu"
               class="icon"
             />
           </v-app-bar-nav-icon>
           <v-img
-            :src="require('../assets/logo.svg')"
+            :src="require('@/assets/logo.svg')"
             position="left"
             contain
             alt="Mesto Logo"
@@ -52,14 +52,14 @@
           class="d-flex justify-end flex-grow-0"
         >
           <div class="overflow-hidden">
-            <div class="pointer d-flex align-center font-weight-bold text-no-wrap">
+            <div class="pointer d-flex align-center text-no-wrap">
               <v-btn
                 icon
                 class="d-flex d-sm-none mr-n3"
               >
                 <v-icon>mdi-magnify</v-icon>
               </v-btn>
-              <span class="user-name_dot-after d-none d-sm-flex">{{ data.user.name }}</span>
+              <span class="user-name_dot-after d-none d-sm-flex font-weight-bold">{{ data.user.name }}</span>
               <v-img
                 :src="data.user.avatar"
                 :alt="data.user.name"
@@ -105,12 +105,12 @@ export default {
   height: 40px;
 }
 
-/deep/ .search__input_no-underline.v-input .v-input__slot::before,
-/deep/ .search__input_no-underline.v-input .v-input__slot::after {
+.search__input_no-underline.v-input >>> .v-input__slot::before,
+.search__input_no-underline.v-input >>> .v-input__slot::after {
   border-style: none;
 }
 
-/deep/ .search__input_no-underline.v-input input::placeholder {
+.search__input_no-underline.v-input >>> input::placeholder {
   color: white;
 }
 
