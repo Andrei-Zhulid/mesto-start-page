@@ -9,6 +9,10 @@
   min-width: 320px;
 }
 
+.background-gray {
+  background: #F1F1F1;
+}
+
 .pointer {
   cursor: pointer;
 }
