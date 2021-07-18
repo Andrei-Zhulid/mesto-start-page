@@ -3,5 +3,9 @@
   "user": {
     "name": "Andrei Z",
     "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+  },
+  "mestoBanner": {
+    "whiteText": "В котором встречаются",
+    "limeText": "идеи и люди."
   }
 }

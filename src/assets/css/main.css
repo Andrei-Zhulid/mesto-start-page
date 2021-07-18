@@ -13,6 +13,10 @@
   background: #F1F1F1;
 }
 
+.secondary-color {
+  color: var(--secondary-color);
+}
+
 .pointer {
   cursor: pointer;
 }
