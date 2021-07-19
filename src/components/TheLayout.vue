@@ -4,8 +4,12 @@
       <v-row>
         <v-col
           md="3"
+          align-self="start"
           class="d-none d-md-flex"
         >
+          <v-sheet class="flex-grow-1">
+            <TheMainMenu/>
+          </v-sheet>
         </v-col>
         <v-col
           md="9"
@@ -19,10 +23,12 @@
 </template>
 
 <script>
+import TheMainMenu from '@/components/TheMainMenu.vue'
 import TheMainContent from '@/components/TheMainContent.vue'
 
 export default {
   components: {
+    TheMainMenu,
     TheMainContent,
   },
 }

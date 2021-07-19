@@ -32,3 +32,9 @@
 .pointer {
   cursor: pointer;
 }
+
+.heading {
+  font-size: 16px;
+  line-height: 22px !important;
+  font-weight: bold;
+}
