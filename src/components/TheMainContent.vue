@@ -20,7 +20,7 @@
         lg="4"
       >
         <v-card
-          :to="project.link"
+          :href="project.link"
           flat
           tile
           class="fill-height"
