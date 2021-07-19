@@ -13,20 +13,20 @@
     </v-row>
     <v-row class="mt-5">
       <v-col
-        v-for="(card, i) in cards"
+        v-for="(project, i) in projects"
         :key="i"
         cols="12"
         sm="6"
         lg="4"
       >
         <v-card
-          :to="card.link"
+          :to="project.link"
           flat
           tile
           class="fill-height"
         >
-          <v-card-title class="heading text-black pb-2">{{ card.title }}</v-card-title>
-          <v-card-text class="normal-text text-black">{{ card.description }}</v-card-text>
+          <v-card-title class="heading text-black pb-2">{{ project.title }}</v-card-title>
+          <v-card-text class="normal-text-2 text-black">{{ project.description }}</v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -43,7 +43,7 @@ export default {
   data () {
     return {
       banner: data.mestoBanner,
-      cards: data.cards,
+      projects: data.projects,
     }
   },
 }
