@@ -7,35 +7,43 @@
   "mainMenu": [
     {
       "icon": "",
-      "title": "События"
+      "title": "События",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Участники"
+      "title": "Участники",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Сообщества"
+      "title": "Сообщества",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Взаимопомощь"
+      "title": "Взаимопомощь",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Университет"
+      "title": "Университет",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Библиотека"
+      "title": "Библиотека",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Мои контакты"
+      "title": "Мои контакты",
+      "link": "#"
     },
     {
       "icon": "",
-      "title": "Openland (Чат)"
+      "title": "Openland (Чат)",
+      "link": "#"
     }
   ],
   "mestoBanner": {

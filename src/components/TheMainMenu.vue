@@ -3,7 +3,7 @@
     <v-list-item
       v-for="(item, i) in items"
       :key="i"
-      href="#"
+      :href="item.link"
     >
       <v-list-item-content class="py-1">
         <v-list-item-title
