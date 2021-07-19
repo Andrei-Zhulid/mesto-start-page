@@ -3,10 +3,10 @@
     <v-row>
       <v-col>
         <MestoBanner>
-          <!-- Space between two texts -->
+          <!-- Leave the space between two texts -->
           <div class="font-weight-bold text-right">{{
               banner.whiteText
-            }} <span class="secondary-color">{{ banner.limeText }}</span>
+            }} <span class="text-lime">{{ banner.limeText }}</span>
           </div>
         </MestoBanner>
       </v-col>

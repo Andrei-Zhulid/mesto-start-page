@@ -1,7 +1,7 @@
 <template>
   <v-sheet
     dark
-    class="banner d-flex align-center pa-5"
+    class="background-deep-purple d-flex align-center pa-5"
   >
     <v-img
       :src="require('@/assets/logo-long.svg')"
@@ -15,10 +15,6 @@
 </template>
 
 <style scoped>
-.banner {
-  background: var(--background);
-}
-
 .logo {
   height: 25px;
   width: 96px;

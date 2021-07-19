@@ -4,7 +4,7 @@
     short
     flat
     dark
-    class="header px-2"
+    class="background-deep-purple px-2"
   >
     <v-container class="layout-width px-0">
       <v-row align="center">
@@ -87,17 +87,13 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  background: var(--background);
-}
-
 .icon {
   height: 24px;
 }
 
 .user-name_dot-after::after {
   content: ".";
-  color: var(--secondary-color);
+  color: var(--lime);
 }
 
 .search {

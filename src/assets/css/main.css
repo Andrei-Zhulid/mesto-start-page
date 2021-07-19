@@ -1,20 +1,32 @@
 :root {
-  --background: radial-gradient(53.56% 53.56% at 50% 0%, #4a195b 0%, #320e3f 100%);
-  --secondary-color: #00FFC2;
+  --black: #16061C;
+  --deep-purple: #4A0A52;
+  --lime: #00FFC2;
 }
 
-/* Extra styles for v-container */
 .layout-width {
   max-width: 1128px;
   min-width: 320px;
+}
+
+.background-deep-purple {
+  background: radial-gradient(53.56% 53.56% at 50% 0%, #4a195b 0%, #320e3f 100%);
 }
 
 .background-gray {
   background: #F1F1F1;
 }
 
-.secondary-color {
-  color: var(--secondary-color);
+.text-black {
+  color: var(--black);
+}
+
+.text-deep-purple {
+  color: var(--deep-purple);
+}
+
+.text-lime {
+  color: var(--lime);
 }
 
 .pointer {
