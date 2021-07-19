@@ -38,3 +38,8 @@
   line-height: 22px !important;
   font-weight: bold;
 }
+
+.normal-text {
+  font-size: 13px;
+  line-height: 18px !important;
+}

@@ -11,6 +11,25 @@
         </MestoBanner>
       </v-col>
     </v-row>
+    <v-row class="mt-5">
+      <v-col
+        v-for="(card, i) in cards"
+        :key="i"
+        cols="12"
+        sm="6"
+        lg="4"
+      >
+        <v-card
+          :to="card.link"
+          flat
+          tile
+          class="fill-height"
+        >
+          <v-card-title class="heading text-black pb-2">{{ card.title }}</v-card-title>
+          <v-card-text class="normal-text text-black">{{ card.description }}</v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -24,7 +43,14 @@ export default {
   data () {
     return {
       banner: data.mestoBanner,
+      cards: data.cards,
     }
   },
 }
 </script>
+
+<style scoped>
+.v-card >>> .text-black.v-card__text {
+  color: var(--black);
+}
+</style>
