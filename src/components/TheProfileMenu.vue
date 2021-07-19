@@ -1,0 +1,79 @@
+<template>
+  <v-menu
+    dark
+    tile
+    left
+    offset-y
+    transition="slide-y-transition"
+    open-on-hover
+    open-on-focus
+  >
+    <template v-slot:activator="{ on, attrs }">
+      <v-btn
+        text
+        x-large
+        v-bind="attrs"
+        v-on="on"
+        class="button-user-profile px-0"
+      >
+        <span class="user-name_dot-after heading d-none d-sm-flex mr-4">{{ data.user.name }}</span>
+        <v-img
+          :src="data.user.avatar"
+          :alt="data.user.name"
+          contain
+          class="avatar"
+        />
+      </v-btn>
+    </template>
+    <v-list class="profile-menu background-deep-purple">
+      <v-list-item
+        v-for="(item, i) in data.profileMenu"
+        :key="i"
+        :href="item.link"
+        class="profile-menu py-1"
+      >{{ item.title }}
+      </v-list-item>
+    </v-list>
+  </v-menu>
+</template>
+
+<script>
+import data from '@/data.json'
+
+export default {
+  data () {
+    return {
+      data,
+    }
+  },
+}
+</script>
+
+<style scoped>
+.user-name_dot-after::after {
+  content: ".";
+  color: var(--lime);
+}
+
+.button-user-profile.v-btn {
+  text-transform: none;
+  text-indent: 0;
+  min-width: unset !important;
+  float: right;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.background-deep-purple.v-list {
+  background: var(--deep-purple);
+}
+
+.profile-menu {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
+</style>

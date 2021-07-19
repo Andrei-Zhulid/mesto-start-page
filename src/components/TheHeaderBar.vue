@@ -49,24 +49,16 @@
 
         <v-col
           md="3"
-          class="d-flex justify-end flex-grow-0"
+          class="d-flex align-center justify-end flex-grow-0"
         >
+          <v-btn
+            icon
+            class="d-flex d-sm-none mr-1"
+          >
+            <v-icon>mdi-magnify</v-icon>
+          </v-btn>
           <div class="overflow-hidden">
-            <div class="pointer d-flex align-center text-no-wrap">
-              <v-btn
-                icon
-                class="d-flex d-sm-none mr-n3"
-              >
-                <v-icon>mdi-magnify</v-icon>
-              </v-btn>
-              <span class="user-name_dot-after d-none d-sm-flex font-weight-bold">{{ data.user.name }}</span>
-              <v-img
-                :src="data.user.avatar"
-                :alt="data.user.name"
-                contain
-                class="avatar ml-4"
-              />
-            </div>
+            <TheProfileMenu/>
           </div>
         </v-col>
       </v-row>
@@ -76,8 +68,10 @@
 
 <script>
 import data from '@/data.json'
+import TheProfileMenu from '@/components/TheProfileMenu'
 
 export default {
+  components: { TheProfileMenu },
   data () {
     return {
       data,
@@ -89,11 +83,6 @@ export default {
 <style scoped>
 .icon {
   height: 24px;
-}
-
-.user-name_dot-after::after {
-  content: ".";
-  color: var(--lime);
 }
 
 .search {
@@ -108,10 +97,5 @@ export default {
 
 .search__input_no-underline.v-input >>> input::placeholder {
   color: white;
-}
-
-.avatar {
-  height: 40px;
-  width: 40px;
 }
 </style>
