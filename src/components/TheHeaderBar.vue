@@ -4,7 +4,7 @@
     short
     flat
     dark
-    class="background-deep-purple px-2"
+    class="background-deep-purple-gradient px-2"
   >
     <v-container class="layout-width px-0">
       <v-row align="center">

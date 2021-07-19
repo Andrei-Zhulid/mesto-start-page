@@ -1,7 +1,7 @@
 <template>
   <v-sheet
     dark
-    class="background-deep-purple d-flex align-center pa-5"
+    class="background-deep-purple-gradient d-flex align-center pa-5"
   >
     <v-img
       :src="require('@/assets/logo-long.svg')"
