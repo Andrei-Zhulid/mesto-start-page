@@ -14,7 +14,7 @@
 }
 
 .background-gray {
-  background: #F1F1F1;
+  background: #F1F1F1 !important;
 }
 
 .text-black {
@@ -40,7 +40,13 @@
   letter-spacing: normal;
 }
 
-.normal-text {
+.normal-text-1 {
+  font-size: 14px;
+  line-height: 19px !important;
+  letter-spacing: normal;
+}
+
+.normal-text-2 {
   font-size: 13px;
   line-height: 18px !important;
   letter-spacing: normal;

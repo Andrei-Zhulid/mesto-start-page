@@ -1,6 +1,6 @@
 <template>
   <v-container class="pa-0">
-    <v-row>
+    <v-row class="mb-n1">
       <v-col>
         <MestoBanner>
           <!-- Leave the space between two texts -->
@@ -11,7 +11,7 @@
         </MestoBanner>
       </v-col>
     </v-row>
-    <v-row class="mt-5">
+    <v-row class="mb-5">
       <v-col
         v-for="(project, i) in projects"
         :key="i"
@@ -30,15 +30,24 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        <MestoHandbook/>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
 import MestoBanner from '@/components/MestoBanner.vue'
+import MestoHandbook from '@/components/MestoHandbook'
 import data from '@/data.json'
 
 export default {
-  components: { MestoBanner },
+  components: {
+    MestoHandbook,
+    MestoBanner,
+  },
 
   data () {
     return {
