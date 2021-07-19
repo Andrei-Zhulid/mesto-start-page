@@ -40,7 +40,7 @@
               <v-icon
                 slot="append"
                 size="18"
-                class="pt-1"
+                class="pointer pt-1"
               >mdi-magnify
               </v-icon>
             </v-text-field>
