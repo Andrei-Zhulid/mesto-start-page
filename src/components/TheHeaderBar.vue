@@ -14,7 +14,7 @@
         >
           <v-app-bar-nav-icon class="d-md-none mr-3 ml-n3">
             <v-img
-              :src="require('@/assets/open-menu.svg')"
+              :src="require('@/assets/icons/open-menu.svg')"
               contain
               alt="Open menu"
               class="icon"
