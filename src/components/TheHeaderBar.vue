@@ -30,7 +30,11 @@
         </v-col>
 
         <v-col md="6">
-          <div class="search d-none d-sm-flex px-4 pt-1">
+          <v-sheet
+            height="40"
+            color="rgba(255, 255, 255, 0.1)"
+            class="px-4 pt-1"
+          >
             <v-text-field
               :placeholder="data.searchPlaceholder"
               hide-details
@@ -44,7 +48,7 @@
               >mdi-magnify
               </v-icon>
             </v-text-field>
-          </div>
+          </v-sheet>
         </v-col>
 
         <v-col
@@ -83,11 +87,6 @@ export default {
 <style scoped>
 .icon {
   height: 24px;
-}
-
-.search {
-  background: rgba(255, 255, 255, 0.1);
-  height: 40px;
 }
 
 .text-field_no-underline.v-input >>> .v-input__slot::before,
