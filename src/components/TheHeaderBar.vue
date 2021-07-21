@@ -35,7 +35,7 @@
               :placeholder="data.searchPlaceholder"
               hide-details
               v-ripple="false"
-              class="search__input_no-underline"
+              class="text-field_no-underline text-field_white-placeholder"
             >
               <v-icon
                 slot="append"
@@ -90,12 +90,12 @@ export default {
   height: 40px;
 }
 
-.search__input_no-underline.v-input >>> .v-input__slot::before,
-.search__input_no-underline.v-input >>> .v-input__slot::after {
+.text-field_no-underline.v-input >>> .v-input__slot::before,
+.text-field_no-underline.v-input >>> .v-input__slot::after {
   border-style: none;
 }
 
-.search__input_no-underline.v-input >>> input::placeholder {
+.text-field_white-placeholder.v-input >>> input::placeholder {
   color: white;
 }
 </style>

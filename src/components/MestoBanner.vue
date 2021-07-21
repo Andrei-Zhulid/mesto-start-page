@@ -10,7 +10,7 @@
       alt="Mesto logo"
       class="logo mr-5"
     />
-    <slot></slot>
+    <slot/>
   </v-sheet>
 </template>
 
