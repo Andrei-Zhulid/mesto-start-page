@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import TheHeaderBar from '@/components/TheHeaderBar'
-import TheLayout from '@/components/TheLayout.vue'
+import TheHeaderBar from '@/components/common/TheHeaderBar'
+import TheLayout from '@/components/layout/TheLayout.vue'
 
 export default {
   name: 'App',

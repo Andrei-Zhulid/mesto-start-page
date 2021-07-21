@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import TheMainMenu from '@/components/TheMainMenu.vue'
-import TheMainContent from '@/components/TheMainContent.vue'
+import TheMainMenu from '@/components/common/TheMainMenu.vue'
+import TheMainContent from '@/components/layout/TheMainContent.vue'
 
 export default {
   components: {

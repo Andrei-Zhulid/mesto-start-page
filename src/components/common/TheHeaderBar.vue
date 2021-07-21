@@ -73,7 +73,7 @@
 
 <script>
 import data from '@/data.json'
-import TheProfileMenu from '@/components/TheProfileMenu'
+import TheProfileMenu from '@/components/common/TheProfileMenu'
 
 export default {
   components: { TheProfileMenu },
