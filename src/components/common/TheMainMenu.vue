@@ -7,7 +7,7 @@
       v-ripple="false"
       class="no-pseudo-opacity"
     >
-      <v-list-item-content class="py-3px">
+      <v-list-item-content class="list-item-content">
         <v-list-item-title
           v-text="item.title"
           class="heading text-black"
@@ -30,7 +30,11 @@ export default {
 </script>
 
 <style scoped>
-.py-3px {
+.list-item-content {
   padding: 3px 0;
+}
+
+.list-item-content > .v-list-item__title:hover {
+  color: #b85cf0;
 }
 </style>
