@@ -33,7 +33,7 @@
           <v-sheet
             height="40"
             color="rgba(255, 255, 255, 0.1)"
-            class="px-4 pt-1"
+            class="search-field"
           >
             <v-text-field
               :placeholder="data.searchPlaceholder"
@@ -87,6 +87,10 @@ export default {
 <style scoped>
 .icon {
   height: 24px;
+}
+
+.search-field {
+  padding: 4px 15px 0 15px;
 }
 
 .text-field_no-underline.v-input >>> .v-input__slot::before,
