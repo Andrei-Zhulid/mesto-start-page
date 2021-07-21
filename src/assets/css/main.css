@@ -51,3 +51,7 @@
   line-height: 18px !important;
   letter-spacing: normal;
 }
+
+.no-pseudo-opacity::before {
+  opacity: 0 !important;
+}

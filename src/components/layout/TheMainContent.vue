@@ -20,7 +20,8 @@
           :href="project.link"
           flat
           tile
-          class="fill-height"
+          v-ripple="false"
+          class="fill-height no-pseudo-opacity"
         >
           <v-card-title class="heading text-black pb-2">{{ project.title }}</v-card-title>
           <v-card-text class="normal-text-2 text-black">{{ project.description }}</v-card-text>

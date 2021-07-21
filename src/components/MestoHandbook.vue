@@ -18,7 +18,8 @@
             :href="section.link"
             flat
             tile
-            class="background-gray fill-height"
+            v-ripple="false"
+            class="background-gray fill-height no-pseudo-opacity"
           >
             <v-card-text class="card_padding normal-text-1 text-black">{{ section.title }}</v-card-text>
           </v-card>

@@ -4,6 +4,8 @@
       v-for="(item, i) in items"
       :key="i"
       :href="item.link"
+      v-ripple="false"
+      class="no-pseudo-opacity"
     >
       <v-list-item-content class="py-3px">
         <v-list-item-title
