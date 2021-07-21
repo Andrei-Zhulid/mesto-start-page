@@ -38,6 +38,7 @@
             <v-text-field
               :placeholder="data.searchPlaceholder"
               hide-details
+              autocomplete="off"
               v-ripple="false"
               class="text-field_no-underline text-field_white-placeholder"
             >
