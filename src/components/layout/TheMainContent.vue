@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-.v-card >>> .text-black.v-card__text {
+.v-card >>> .text-black {
   color: var(--black);
 }
 </style>

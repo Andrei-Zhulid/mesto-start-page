@@ -25,12 +25,12 @@
         />
       </v-btn>
     </template>
-    <v-list class="profile-menu background-deep-purple">
+    <v-list class="profile-menu-font background-deep-purple">
       <v-list-item
         v-for="(item, i) in data.profileMenu"
         :key="i"
         :href="item.link"
-        class="profile-menu py-1"
+        class="py-1"
       >{{ item.title }}
       </v-list-item>
     </v-list>
@@ -55,7 +55,7 @@ export default {
   color: var(--lime);
 }
 
-.button-user-profile.v-btn {
+.button-user-profile {
   text-transform: none;
   text-indent: 0;
   min-width: unset !important;
@@ -71,7 +71,7 @@ export default {
   background: var(--deep-purple);
 }
 
-.profile-menu {
+.profile-menu-font {
   font-size: 12px;
   line-height: 16px;
   font-weight: bold;
