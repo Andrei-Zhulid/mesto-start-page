@@ -2,12 +2,9 @@
   <v-container class="pa-0">
     <v-row class="mb-n1">
       <v-col>
-        <MestoBanner>
-          <!-- Leave the space between two texts -->
-          <div class="font-weight-bold text-right">{{
-              banner.whiteText
-            }} <span class="text-lime">{{ banner.limeText }}</span>
-          </div>
+        <MestoBanner class="font-weight-bold">{{
+            banner.whiteText
+          }}&nbsp;<span class="text-lime">{{ banner.limeText }}</span>
         </MestoBanner>
       </v-col>
     </v-row>
