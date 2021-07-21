@@ -5,7 +5,7 @@
       :key="i"
       :href="item.link"
     >
-      <v-list-item-content class="py-1">
+      <v-list-item-content class="py-3px">
         <v-list-item-title
           v-text="item.title"
           class="heading text-black"
@@ -28,4 +28,7 @@ export default {
 </script>
 
 <style scoped>
+.py-3px {
+  padding: 3px 0;
+}
 </style>
