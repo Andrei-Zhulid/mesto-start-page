@@ -12,9 +12,25 @@
           md="3"
           class="d-flex align-center flex-grow-0"
         >
-          <v-app-bar-nav-icon class="d-md-none mr-3 ml-n3">
-            <OpenMenuIcon/>
-          </v-app-bar-nav-icon>
+          <v-menu
+            tile
+            offset-y
+            transition="slide-y-transition"
+            open-on-hover
+            open-on-focus
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-app-bar-nav-icon
+                v-bind="attrs"
+                v-on="on"
+                class="d-md-none mr-3 ml-n3"
+              >
+                <OpenMenuIcon/>
+              </v-app-bar-nav-icon>
+            </template>
+
+            <TheMainMenuList/>
+          </v-menu>
 
           <Logo/>
         </v-col>
@@ -63,16 +79,19 @@
 
 <script>
 import data from '@/data.json'
+import TheMainMenuList from '@/components/common/TheMainMenuList'
 import TheProfileMenu from '@/components/common/TheProfileMenu'
 import OpenMenuIcon from '@/assets/icons/open-menu.svg'
 import Logo from '@/assets/logo.svg'
 
 export default {
   components: {
+    TheMainMenuList,
     TheProfileMenu,
     OpenMenuIcon,
     Logo,
   },
+
   data () {
     return {
       data,
