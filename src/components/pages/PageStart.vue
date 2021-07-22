@@ -16,16 +16,7 @@
         sm="6"
         lg="4"
       >
-        <v-card
-          :href="project.link"
-          flat
-          tile
-          v-ripple="false"
-          class="fill-height no-pseudo-opacity"
-        >
-          <v-card-title class="heading text-black pb-2">{{ project.title }}</v-card-title>
-          <v-card-text class="normal-text-2 text-black">{{ project.description }}</v-card-text>
-        </v-card>
+        <ProjectCard :project="project"/>
       </v-col>
     </v-row>
     <v-row>
@@ -39,10 +30,12 @@
 <script>
 import MestoBanner from '@/components/MestoBanner.vue'
 import MestoHandbook from '@/components/MestoHandbook'
+import ProjectCard from '@/components/ProjectCard'
 import data from '@/data.json'
 
 export default {
   components: {
+    ProjectCard,
     MestoHandbook,
     MestoBanner,
   },
@@ -55,9 +48,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.v-card >>> .text-black {
-  color: var(--black);
-}
-</style>
