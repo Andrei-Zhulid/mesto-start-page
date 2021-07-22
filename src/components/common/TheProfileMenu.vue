@@ -17,12 +17,15 @@
         class="button-user-profile px-0"
       >
         <span class="user-name_dot-after heading d-none d-sm-flex mr-4">{{ user.name }}</span>
-        <v-img
-          :src="user.avatar"
-          :alt="user.name"
-          contain
-          class="avatar"
-        />
+        <v-avatar
+          tile
+          size="40"
+        >
+          <v-img
+            :src="user.avatar"
+            :alt="user.name"
+          />
+        </v-avatar>
       </v-btn>
     </template>
     <v-list class="profile-menu-font background-deep-purple">
@@ -76,11 +79,6 @@ export default {
   text-indent: 0;
   min-width: unset !important;
   float: right;
-}
-
-.avatar {
-  height: 40px;
-  width: 40px;
 }
 
 .background-deep-purple.v-list {
