@@ -13,20 +13,10 @@
           class="d-flex align-center flex-grow-0"
         >
           <v-app-bar-nav-icon class="d-md-none mr-3 ml-n3">
-            <v-img
-              :src="require('@/assets/icons/open-menu.svg')"
-              contain
-              alt="Open menu"
-              class="icon"
-            />
+            <OpenMenuIcon/>
           </v-app-bar-nav-icon>
-          <v-img
-            :src="require('@/assets/logo.svg')"
-            position="left"
-            contain
-            alt="Mesto Logo"
-            class="icon"
-          />
+
+          <Logo/>
         </v-col>
 
         <v-col md="6">
@@ -74,9 +64,15 @@
 <script>
 import data from '@/data.json'
 import TheProfileMenu from '@/components/common/TheProfileMenu'
+import OpenMenuIcon from '@/assets/icons/open-menu.svg'
+import Logo from '@/assets/logo.svg'
 
 export default {
-  components: { TheProfileMenu },
+  components: {
+    TheProfileMenu,
+    OpenMenuIcon,
+    Logo,
+  },
   data () {
     return {
       data,
@@ -86,10 +82,6 @@ export default {
 </script>
 
 <style scoped>
-.icon {
-  height: 24px;
-}
-
 .search-field {
   padding: 4px 15px 0 15px;
 }

@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-svg-loader": "^0.16.0",
     "vuetify": "^2.5.7"
   },
   "devDependencies": {
@@ -27,7 +28,7 @@
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "^2.4.1",
-    "vue-template-compiler": "^2.6.11",
+    "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
   }
 }
