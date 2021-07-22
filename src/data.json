@@ -6,54 +6,54 @@
   },
   "profileMenu": [
     {
-      "icon": "",
+      "icon": "edit",
       "title": "Редактировать профиль",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "sign-out",
       "title": "Выйти",
       "link": "#"
     }
   ],
   "mainMenu": [
     {
-      "icon": "",
+      "icon": "google-calendar",
       "title": "События",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "user-list",
       "title": "Участники",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "groups",
       "title": "Сообщества",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "clap",
       "title": "Взаимопомощь",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "education",
       "title": "Университет",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "contacts",
       "title": "Библиотека",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "contacts",
       "title": "Мои контакты",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "openland",
       "title": "Openland (Чат)",
       "link": "#"
     }
@@ -64,31 +64,31 @@
   },
   "projects": [
     {
-      "icon": "",
+      "icon": "projects",
       "title": "Проекты в Месте",
       "description": "Узнайте о проектах, которые развиваются в Месте",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "education",
       "title": "Место.Университет",
       "description": "Получайте бесплатные знания и развивайте базу знаний вместе",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "castle",
       "title": "Идеальный Штурм",
       "description": "Присоединяйтесь к менторской программе в Месте",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "clap",
       "title": "Взаимопомощь",
       "description": "Получайте ответы на вопросы от профессионалов",
       "link": "#"
     },
     {
-      "icon": "",
+      "icon": "news",
       "title": "Еженедельные новости",
       "description": "Читайте о том, что произошло в Месте за неделю",
       "link": "#"

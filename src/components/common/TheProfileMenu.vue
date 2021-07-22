@@ -16,10 +16,10 @@
         v-on="on"
         class="button-user-profile px-0"
       >
-        <span class="user-name_dot-after heading d-none d-sm-flex mr-4">{{ data.user.name }}</span>
+        <span class="user-name_dot-after heading d-none d-sm-flex mr-4">{{ user.name }}</span>
         <v-img
-          :src="data.user.avatar"
-          :alt="data.user.name"
+          :src="user.avatar"
+          :alt="user.name"
           contain
           class="avatar"
         />
@@ -27,11 +27,16 @@
     </template>
     <v-list class="profile-menu-font background-deep-purple">
       <v-list-item
-        v-for="(item, i) in data.profileMenu"
+        v-for="(item, i) in items"
         :key="i"
         :href="item.link"
         class="py-1"
-      >{{ item.title }}
+      >
+        <component
+          :is="item.icon"
+          class="mr-2"
+        />
+        {{ item.title }}
       </v-list-item>
     </v-list>
   </v-menu>
@@ -39,12 +44,23 @@
 
 <script>
 import data from '@/data.json'
+import { getIconComponent } from '@/helpers'
 
 export default {
   data () {
     return {
-      data,
+      user: data.user,
+      menuItems: data.profileMenu,
     }
+  },
+
+  computed: {
+    items () {
+      return this.menuItems.map(item => ({
+        ...item,
+        icon: getIconComponent(item.icon),
+      }))
+    },
   },
 }
 </script>
