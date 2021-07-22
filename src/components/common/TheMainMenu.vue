@@ -13,7 +13,7 @@
         <component :is="item.icon"/>
       </v-list-item-icon>
 
-      <v-list-item-content class="list-item-content">
+      <v-list-item-content class="list-item__content">
         <v-list-item-title
           v-text="item.title"
           class="heading text-black"
@@ -53,11 +53,11 @@ export default {
   min-width: auto;
 }
 
-.list-item-content {
+.list-item__content {
   padding: 3px 0;
 }
 
-.list-item-content > .v-list-item__title:hover {
+.list-item__content > .v-list-item__title:hover {
   color: #b85cf0;
 }
 </style>
