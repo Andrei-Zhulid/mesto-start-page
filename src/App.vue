@@ -9,7 +9,7 @@
 
 <script>
 import TheHeaderBar from '@/components/common/TheHeaderBar'
-import TheLayout from '@/components/layout/TheLayout.vue'
+import TheLayout from '@/components/common/TheLayout.vue'
 
 export default {
   name: 'App',

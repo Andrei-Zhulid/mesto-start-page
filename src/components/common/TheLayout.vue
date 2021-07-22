@@ -24,7 +24,7 @@
 
 <script>
 import TheMainMenu from '@/components/common/TheMainMenu.vue'
-import TheMainContent from '@/components/layout/TheMainContent.vue'
+import TheMainContent from '@/components/pages/PageStart.vue'
 
 export default {
   components: {
