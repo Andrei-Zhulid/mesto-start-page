@@ -8,14 +8,14 @@
           class="d-none d-md-flex"
         >
           <v-sheet class="flex-grow-1">
-            <TheMainMenu/>
+            <TheMainMenuList/>
           </v-sheet>
         </v-col>
         <v-col
           md="9"
           cols="12"
         >
-          <TheMainContent/>
+          <PageStart/>
         </v-col>
       </v-row>
     </v-container>
@@ -23,13 +23,13 @@
 </template>
 
 <script>
-import TheMainMenu from '@/components/common/TheMainMenu.vue'
-import TheMainContent from '@/components/pages/PageStart.vue'
+import TheMainMenuList from '@/components/common/TheMainMenuList.vue'
+import PageStart from '@/components/pages/PageStart.vue'
 
 export default {
   components: {
-    TheMainMenu,
-    TheMainContent,
+    TheMainMenuList,
+    PageStart,
   },
 }
 </script>
