@@ -3,6 +3,7 @@
     <v-container class="layout-width pa-0">
       <v-row>
         <v-col
+          v-if="$vuetify.breakpoint.mdAndUp"
           md="3"
           align-self="start"
           class="d-none d-md-flex"
@@ -11,10 +12,7 @@
             <TheMainMenuList/>
           </v-sheet>
         </v-col>
-        <v-col
-          md="9"
-          cols="12"
-        >
+        <v-col>
           <PageStart/>
         </v-col>
       </v-row>
