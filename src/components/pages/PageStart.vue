@@ -19,9 +19,14 @@
         <ProjectCard :project="project"/>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="mb-5">
       <v-col>
         <MestoHandbook/>
+      </v-col>
+    </v-row>
+    <v-row class="mb-2">
+      <v-col>
+        <SocialLinks/>
       </v-col>
     </v-row>
   </v-container>
@@ -31,6 +36,7 @@
 import MestoBanner from '@/components/MestoBanner.vue'
 import MestoHandbook from '@/components/MestoHandbook'
 import ProjectCard from '@/components/ProjectCard'
+import SocialLinks from '@/components/SocialLinks'
 import data from '@/data.json'
 
 export default {
@@ -38,6 +44,7 @@ export default {
     ProjectCard,
     MestoHandbook,
     MestoBanner,
+    SocialLinks,
   },
 
   data () {

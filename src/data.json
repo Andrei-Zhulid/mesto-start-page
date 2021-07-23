@@ -130,5 +130,34 @@
         "link": "#"
       }
     ]
+  },
+  "social": {
+    "title": "Место в соцсетях",
+    "links": [
+      {
+        "icon": "Telegram",
+        "link": "/Telegram"
+      },
+      {
+        "icon": "VK",
+        "link": "/VK"
+      },
+      {
+        "icon": "Twitter",
+        "link": "/Twitter"
+      },
+      {
+        "icon": "Instagram",
+        "link": "/Instagram"
+      },
+      {
+        "icon": "Facebook",
+        "link": "/Facebook"
+      },
+      {
+        "icon": "Linkedin",
+        "link": "/Linkedin"
+      }
+    ]
   }
 }
