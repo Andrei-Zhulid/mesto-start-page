@@ -3,8 +3,9 @@
     dark
     class="background-deep-purple-gradient d-flex align-center justify-space-between pa-5"
   >
-    <LogoLong/>
-
+    <div class="mr-5">
+      <LogoLong/>
+    </div>
     <div>
       <slot/>
     </div>
