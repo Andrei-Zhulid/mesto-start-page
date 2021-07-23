@@ -5,7 +5,7 @@
       :key="i"
       :href="item.link"
       v-ripple="false"
-      class="no-pseudo-opacity"
+      class="list-item__highlight-on-hover no-pseudo-opacity"
     >
       <v-list-item-icon
         class="list-item__icon my-0 mr-4"
@@ -57,7 +57,17 @@ export default {
   padding: 3px 0;
 }
 
-.list-item__content > .v-list-item__title:hover {
-  color: #b85cf0;
+.list-item__highlight-on-hover:hover >>> .v-list-item__title {
+  color: var(--ligth-purple);
+}
+
+/* Exclude icons made by image (e.g. openland.svg) */
+.list-item__highlight-on-hover:hover >>> path:not([fill^="url"]) {
+  fill: var(--ligth-purple)
+}
+
+/* Apply just for icons made by image (e.g. openland.svg) */
+.list-item__highlight-on-hover:hover >>> path[fill^="url"] {
+  filter: contrast(120%) saturate(200%);
 }
 </style>
