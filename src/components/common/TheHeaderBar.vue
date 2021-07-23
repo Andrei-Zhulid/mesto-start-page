@@ -32,7 +32,9 @@
             <TheMainMenuList/>
           </v-menu>
 
-          <Logo/>
+          <a href="/">
+            <Logo/>
+          </a>
         </v-col>
 
         <v-col md="6">
