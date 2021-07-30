@@ -13,7 +13,7 @@
           </v-sheet>
         </v-col>
         <v-col>
-          <PageStart/>
+          <router-view/>
         </v-col>
       </v-row>
     </v-container>
@@ -22,12 +22,8 @@
 
 <script>
 import TheMainMenuList from '@/components/common/TheMainMenuList.vue'
-import PageStart from '@/components/pages/PageStart.vue'
 
 export default {
-  components: {
-    TheMainMenuList,
-    PageStart,
-  },
+  components: { TheMainMenuList },
 }
 </script>
