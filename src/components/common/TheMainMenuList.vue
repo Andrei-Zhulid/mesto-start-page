@@ -3,7 +3,7 @@
     <v-list-item
       v-for="(item, i) in items"
       :key="i"
-      :href="item.link"
+      :to="item.slug"
       v-ripple="false"
       class="list-item__highlight-on-hover no-pseudo-opacity"
     >
@@ -24,13 +24,13 @@
 </template>
 
 <script>
-import data from '@/data.json'
+import data from '@/data/mainMenu.json'
 import { getIconComponent } from '@/helpers'
 
 export default {
   data () {
     return {
-      menuItems: data.mainMenu,
+      menuItems: data.menuItems,
     }
   },
 

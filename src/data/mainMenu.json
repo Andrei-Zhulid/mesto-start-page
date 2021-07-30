@@ -1,0 +1,44 @@
+{
+  "menuItems": [
+    {
+      "icon": "google-calendar",
+      "title": "События",
+      "slug": "events"
+    },
+    {
+      "icon": "user-list",
+      "title": "Участники",
+      "slug": "users"
+    },
+    {
+      "icon": "groups",
+      "title": "Сообщества",
+      "slug": "groups"
+    },
+    {
+      "icon": "clap",
+      "title": "Взаимопомощь",
+      "slug": "help"
+    },
+    {
+      "icon": "education",
+      "title": "Университет",
+      "slug": "university"
+    },
+    {
+      "icon": "contacts",
+      "title": "Библиотека",
+      "slug": "library"
+    },
+    {
+      "icon": "contacts",
+      "title": "Мои контакты",
+      "slug": "contacts"
+    },
+    {
+      "icon": "openland",
+      "title": "Openland (Чат)",
+      "slug": "openland"
+    }
+  ]
+}

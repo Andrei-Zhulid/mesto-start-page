@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import data from '@/data.json'
+import data from '@/data/pageStart.json'
 import { getIconComponent } from '@/helpers'
 
 export default {

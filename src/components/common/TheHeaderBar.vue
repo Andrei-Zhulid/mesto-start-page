@@ -44,7 +44,7 @@
             class="search-field"
           >
             <v-text-field
-              :placeholder="data.searchPlaceholder"
+              :placeholder="searchPlaceholder"
               hide-details
               autocomplete="off"
               v-ripple="false"
@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import data from '@/data.json'
+import data from '@/data/headerBar.json'
 import TheMainMenuList from '@/components/common/TheMainMenuList'
 import TheProfileMenu from '@/components/common/TheProfileMenu'
 import OpenMenuIcon from '@/assets/icons/open-menu.svg'
@@ -96,7 +96,7 @@ export default {
 
   data () {
     return {
-      data,
+      searchPlaceholder: data.searchPlaceholder,
     }
   },
 }
