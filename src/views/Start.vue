@@ -37,7 +37,7 @@ import MestoBanner from '@/components/MestoBanner.vue'
 import MestoHandbook from '@/components/MestoHandbook'
 import ProjectCard from '@/components/ProjectCard'
 import SocialLinks from '@/components/SocialLinks'
-import data from '@/data/pageStart.json'
+import data from '@/data/viewStart.json'
 
 export default {
   components: {

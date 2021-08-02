@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import data from '@/data/pageStart.json'
+import data from '@/data/viewStart.json'
 
 export default {
   data () {
