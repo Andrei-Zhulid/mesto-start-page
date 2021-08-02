@@ -33,7 +33,7 @@
           </v-menu>
 
           <a href="/">
-            <Logo/>
+            <Logo class="d-flex"/>
           </a>
         </v-col>
 
