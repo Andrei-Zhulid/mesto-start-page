@@ -1,2 +1,18 @@
 $body-font-family: Manrope;
 $list-item-min-height: 24px;
+
+$btn-icon-font-size: 16px;
+$btn-letter-spacing: normal;
+$btn-text-transform: none;
+$btn-sizes: (
+  'x-small': 40,
+  'small': 40,
+  'default': 40,
+);
+$btn-font-sizes: (
+  'x-small':12px,
+  'small': 14px,
+  'default': 16px,
+  'large': 16px,
+  'x-large': 18px,
+);
