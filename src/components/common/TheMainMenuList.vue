@@ -5,11 +5,10 @@
       :key="i"
       :to="item.slug"
       v-ripple="false"
+      active-class="list-item__active"
       class="list-item__highlight-on-hover no-pseudo-opacity"
     >
-      <v-list-item-icon
-        class="list-item__icon my-0 mr-4"
-      >
+      <v-list-item-icon class="list-item__icon my-0 mr-4">
         <component :is="item.icon"/>
       </v-list-item-icon>
 
@@ -57,16 +56,19 @@ export default {
   padding: 3px 0;
 }
 
+.list-item__active >>> .v-list-item__title,
 .list-item__highlight-on-hover:hover >>> .v-list-item__title {
   color: var(--ligth-purple);
 }
 
 /* Exclude icons made by image (e.g. openland.svg) */
+.list-item__active >>> path:not([fill^="url"]),
 .list-item__highlight-on-hover:hover >>> path:not([fill^="url"]) {
-  fill: var(--ligth-purple)
+  fill: var(--ligth-purple);
 }
 
 /* Apply just for icons made by image (e.g. openland.svg) */
+.list-item__active >>> path[fill^="url"],
 .list-item__highlight-on-hover:hover >>> path[fill^="url"] {
   filter: contrast(120%) saturate(200%);
 }
