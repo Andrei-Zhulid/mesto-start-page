@@ -49,6 +49,7 @@
               autocomplete="off"
               v-ripple="false"
               class="text-field_no-underline text-field__placeholder_white"
+              style="font-weight: 500"
             >
               <v-icon
                 slot="append"

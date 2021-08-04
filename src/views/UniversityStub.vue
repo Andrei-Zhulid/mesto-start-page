@@ -22,7 +22,11 @@
         hide-details
         class="email flex-grow-0 mr-4"
       />
-      <MButton x-small>Я в деле</MButton>
+      <MButton
+        x-small
+        style="font-weight: 600"
+      >Я в деле
+      </MButton>
     </div>
 
     <p>Университет в Месте предназначен для передачи знаний от одного человека к другому понятным, систематичным и
@@ -58,7 +62,7 @@ export default {
   font-size: 12px;
   letter-spacing: normal;
   color: var(--black);
-  padding: 3px 0;
+  padding: 3px;
 }
 
 .email.v-text-field >>> input::placeholder {
