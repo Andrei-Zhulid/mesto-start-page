@@ -1,6 +1,11 @@
 {
   "menuItems": [
     {
+      "icon": "Explore",
+      "title": "Навигатор",
+      "slug": "navigator"
+    },
+    {
       "icon": "google-calendar",
       "title": "События",
       "slug": "events"

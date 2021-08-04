@@ -10,6 +10,11 @@ const routes = [
     component: () => import('@/views/Start'),
   },
   {
+    path: '/navigator',
+    name: 'Navigator',
+    component: () => import('@/views/Navigator'),
+  },
+  {
     path: '/university',
     name: 'University',
     component: () => import('@/views/UniversityStub'),
