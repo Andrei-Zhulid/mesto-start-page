@@ -10,7 +10,3 @@ export default {
   name: 'NotImplemented',
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -4,7 +4,7 @@
       <v-col>
         <MestoBanner class="font-weight-bold">{{
             banner.whiteText
-          }}&nbsp;<span class="text-lime">{{ banner.limeText }}</span>
+          }}&nbsp;<span class="m-text_lime">{{ banner.limeText }}</span>
         </MestoBanner>
       </v-col>
     </v-row>

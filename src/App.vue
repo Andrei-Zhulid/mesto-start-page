@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <TheHeaderBar/>
-    <v-main class="background-gray">
+    <v-main class="m-background_gray">
       <TheLayout/>
     </v-main>
   </v-app>

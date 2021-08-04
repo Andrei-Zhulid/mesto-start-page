@@ -1,7 +1,10 @@
 <template>
   <div>
     <v-sheet class="pa-4 mb-8">
-      <span class="text-red subtitle-1">В разработке</span>
+      <span
+        class="subtitle-1"
+        style="color: #EB5757"
+      >В разработке</span>
     </v-sheet>
 
     <p>Привет и добро пожаловать в группу <strong>Mesto University</strong>!</p>
@@ -45,13 +48,8 @@ export default {
 </script>
 
 <style scoped>
-.text-red {
-  color: #EB5757;
-}
-
 .email {
   width: 330px;
-  height: 40px;
   border-radius: 0;
 }
 

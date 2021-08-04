@@ -4,9 +4,9 @@
     short
     flat
     dark
-    class="background-deep-purple-gradient px-2"
+    class="m-background_deep-purple_gradient px-2"
   >
-    <v-container class="layout-width px-0">
+    <v-container class="m-layout_width px-0">
       <v-row align="center">
         <v-col
           md="3"
@@ -41,19 +41,20 @@
           <v-sheet
             height="40"
             color="rgba(255, 255, 255, 0.1)"
-            class="search-field"
+            class="px-4 pt-1"
           >
             <v-text-field
               :placeholder="searchPlaceholder"
               hide-details
               autocomplete="off"
               v-ripple="false"
-              class="text-field_no-underline text-field_white-placeholder"
+              class="text-field_no-underline text-field__placeholder_white"
             >
               <v-icon
                 slot="append"
                 size="18"
-                class="pointer pt-1"
+                class="pt-1"
+                style="cursor: pointer"
               >mdi-magnify
               </v-icon>
             </v-text-field>
@@ -103,16 +104,12 @@ export default {
 </script>
 
 <style scoped>
-.search-field {
-  padding: 4px 15px 0 15px;
-}
-
 .text-field_no-underline.v-input >>> .v-input__slot::before,
 .text-field_no-underline.v-input >>> .v-input__slot::after {
   border-style: none;
 }
 
-.text-field_white-placeholder.v-input >>> input::placeholder {
+.text-field__placeholder_white.v-input >>> input::placeholder {
   color: white;
 }
 </style>

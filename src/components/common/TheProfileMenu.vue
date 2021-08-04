@@ -14,7 +14,7 @@
         x-large
         v-bind="attrs"
         v-on="on"
-        class="button-user-profile px-0"
+        class="user-profile px-0"
       >
         <span class="user-name_dot-after subtitle-1 d-none d-sm-flex mr-4">{{ user.name }}</span>
         <v-avatar
@@ -28,7 +28,7 @@
         </v-avatar>
       </v-btn>
     </template>
-    <v-list class="profile-menu-font background-deep-purple">
+    <v-list class="profile-menu">
       <v-list-item
         v-for="(item, i) in items"
         :key="i"
@@ -74,18 +74,15 @@ export default {
   color: var(--lime);
 }
 
-.button-user-profile {
+.user-profile {
   text-transform: none;
   text-indent: 0;
   min-width: unset !important;
   float: right;
 }
 
-.background-deep-purple.v-list {
+.profile-menu {
   background: var(--deep-purple);
-}
-
-.profile-menu-font {
   font-size: 12px;
   line-height: 16px;
   font-weight: bold;

@@ -5,17 +5,17 @@
       :key="i"
       :to="item.slug"
       v-ripple="false"
-      active-class="list-item__active"
-      class="list-item__highlight-on-hover no-pseudo-opacity"
+      active-class="list-item_active"
+      class="list-item_hover_highlight m-text_black m-no-pseudo-opacity"
     >
       <v-list-item-icon class="list-item__icon my-0 mr-4">
         <component :is="item.icon"/>
       </v-list-item-icon>
 
-      <v-list-item-content class="list-item__content">
+      <v-list-item-content class="py-1">
         <v-list-item-title
           v-text="item.title"
-          class="text-black subtitle-1"
+          class="subtitle-1"
         />
       </v-list-item-content>
     </v-list-item>
@@ -52,24 +52,20 @@ export default {
   min-width: auto;
 }
 
-.list-item__content {
-  padding: 3px 0;
-}
-
-.list-item__active >>> .v-list-item__title,
-.list-item__highlight-on-hover:hover >>> .v-list-item__title {
+.list-item_active >>> .v-list-item__title,
+.list-item_hover_highlight:hover >>> .v-list-item__title {
   color: var(--ligth-purple);
 }
 
 /* Exclude icons made by image (e.g. openland.svg) */
-.list-item__active >>> path:not([fill^="url"]),
-.list-item__highlight-on-hover:hover >>> path:not([fill^="url"]) {
+.list-item_active >>> path:not([fill^="url"]),
+.list-item_hover_highlight:hover >>> path:not([fill^="url"]) {
   fill: var(--ligth-purple);
 }
 
 /* Apply just for icons made by image (e.g. openland.svg) */
-.list-item__active >>> path[fill^="url"],
-.list-item__highlight-on-hover:hover >>> path[fill^="url"] {
+.list-item_active >>> path[fill^="url"],
+.list-item_hover_highlight:hover >>> path[fill^="url"] {
   filter: contrast(120%) saturate(200%);
 }
 </style>

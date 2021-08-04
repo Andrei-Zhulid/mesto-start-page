@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="text-black subtitle-1">{{ social.title }}</span>
+    <span class="m-text_black subtitle-1">{{ social.title }}</span>
     <div class="mt-4">
       <a
         v-for="(item, index) in items"
@@ -37,7 +37,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-
-</style>
