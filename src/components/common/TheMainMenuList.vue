@@ -15,7 +15,7 @@
       <v-list-item-content class="list-item__content">
         <v-list-item-title
           v-text="item.title"
-          class="heading text-black"
+          class="text-black subtitle-1"
         />
       </v-list-item-content>
     </v-list-item>

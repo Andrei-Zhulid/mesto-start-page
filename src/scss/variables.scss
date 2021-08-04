@@ -1,4 +1,5 @@
 $body-font-family: Manrope;
+
 $list-item-min-height: 24px;
 
 $btn-icon-font-size: 16px;
@@ -15,4 +16,18 @@ $btn-font-sizes: (
   'default': 16px,
   'large': 16px,
   'x-large': 18px,
+);
+
+$headings: (
+  'subtitle-1': (
+    'size': 16px,
+    'weight': bold,
+    'line-height': 22px !important,
+    'letter-spacing': normal,
+  ),
+  'body-1': (
+    'size': 14px,
+    'line-height': 19px !important,
+    'letter-spacing': normal,
+  )
 );

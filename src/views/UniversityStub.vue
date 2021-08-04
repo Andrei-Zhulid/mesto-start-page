@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-sheet class="pa-4 mb-8">
-      <span class="heading text-red">В разработке</span>
+      <span class="text-red subtitle-1">В разработке</span>
     </v-sheet>
 
     <p>Привет и добро пожаловать в группу <strong>Mesto University</strong>!</p>

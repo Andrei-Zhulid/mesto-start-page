@@ -34,25 +34,6 @@
   cursor: pointer;
 }
 
-.heading {
-  font-size: 16px;
-  line-height: 22px !important;
-  font-weight: bold;
-  letter-spacing: normal;
-}
-
-.normal-text-1 {
-  font-size: 14px;
-  line-height: 19px !important;
-  letter-spacing: normal;
-}
-
-.normal-text-2 {
-  font-size: 13px;
-  line-height: 18px !important;
-  letter-spacing: normal;
-}
-
 .no-pseudo-opacity::before {
   opacity: 0 !important;
 }
