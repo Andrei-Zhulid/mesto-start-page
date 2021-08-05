@@ -1,11 +1,13 @@
 <template>
-  <div></div>
+  <div>
+    <BlockNews/>
+  </div>
 </template>
 
 <script>
-export default {}
+import BlockNews from '@/components/BlockNews'
+
+export default {
+  components: { BlockNews },
+}
 </script>
-
-<style scoped>
-
-</style>

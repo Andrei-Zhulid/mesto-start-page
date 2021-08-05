@@ -1,0 +1,20 @@
+{
+  "news": [
+    {
+      "title": "Mission Space подняли 100 мультов и не знают, что делать",
+      "routeName": "NotFound",
+      "articleId": "mission-space"
+    },
+    {
+      "title": "Как сделать питч презентацию и не уснуть во время",
+      "routeName": "NotFound",
+      "articleId": "how-to-make-a-speech"
+    }
+  ],
+  "summary": [
+    {
+      "title": "Сегодня",
+      "number": 2
+    }
+  ]
+}
