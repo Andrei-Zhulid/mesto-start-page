@@ -2,10 +2,10 @@
   <v-container class="pa-0">
     <v-row class="mb-n1">
       <v-col>
-        <MestoBanner class="font-weight-bold">{{
+        <MBanner class="font-weight-bold">{{
             banner.whiteText
           }}&nbsp;<span class="m-text_lime">{{ banner.limeText }}</span>
-        </MestoBanner>
+        </MBanner>
       </v-col>
     </v-row>
     <v-row class="mb-5">
@@ -21,7 +21,7 @@
     </v-row>
     <v-row class="mb-5">
       <v-col>
-        <MestoHandbook/>
+        <Handbook/>
       </v-col>
     </v-row>
     <v-row class="mb-2">
@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import MestoBanner from '@/components/MestoBanner.vue'
-import MestoHandbook from '@/components/MestoHandbook'
+import MBanner from '@/components/MBanner.vue'
+import Handbook from '@/components/Handbook'
 import ProjectCard from '@/components/ProjectCard'
 import SocialLinks from '@/components/SocialLinks'
 import data from '@/data/viewStart.json'
@@ -42,8 +42,8 @@ import data from '@/data/viewStart.json'
 export default {
   components: {
     ProjectCard,
-    MestoHandbook,
-    MestoBanner,
+    Handbook,
+    MBanner,
     SocialLinks,
   },
 
