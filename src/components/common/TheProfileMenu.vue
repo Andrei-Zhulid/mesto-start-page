@@ -28,7 +28,10 @@
         </v-avatar>
       </v-btn>
     </template>
-    <v-list class="profile-menu">
+    <v-list
+      color="deep-purple"
+      class="profile-menu"
+    >
       <v-list-item
         v-for="(item, i) in items"
         :key="i"
@@ -71,7 +74,8 @@ export default {
 <style scoped>
 .user-name_dot-after::after {
   content: ".";
-  color: var(--lime);
+  /*noinspection CssUnresolvedCustomProperty*/
+  color: var(--v-lime-base);
 }
 
 .user-profile {
@@ -82,7 +86,6 @@ export default {
 }
 
 .profile-menu {
-  background: var(--deep-purple);
   font-size: 12px;
   line-height: 16px;
   font-weight: bold;

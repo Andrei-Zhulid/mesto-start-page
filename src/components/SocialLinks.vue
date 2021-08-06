@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="m-text_black subtitle-1">{{ social.title }}</span>
+    <span class="subtitle-1">{{ social.title }}</span>
     <div class="mt-4">
       <a
         v-for="(item, index) in items"

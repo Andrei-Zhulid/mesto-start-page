@@ -4,7 +4,7 @@
     tile
     class="pa-3 pb-4"
   >
-    <v-card-title class="m-text_deep-purple subtitle-1 pa-3 pb-2">{{ handbook.title }}</v-card-title>
+    <v-card-title class="subtitle-1 deep-purple--text pa-3 pb-2">{{ handbook.title }}</v-card-title>
     <v-container>
       <v-row>
         <v-col
@@ -22,7 +22,7 @@
             class="m-background_gray fill-height m-no-pseudo-opacity"
           >
             <v-card-text
-              class="m-text_black body-1"
+              class="text--primary body-1"
               style="padding: 10px 16px 11px 16px;"
             >{{ section.title }}
             </v-card-text>

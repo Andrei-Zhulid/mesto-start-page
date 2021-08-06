@@ -8,7 +8,10 @@ export default new Vuetify({
     options: { customProperties: true },
     themes: {
       light: {
-        primary: '#4A0A52', // deep-purple
+        'deep-purple': '#4A0A52',
+        'light-purple': '#B85CF0',
+        lime: '#00FFC2',
+        anchor: '#16061C',
       },
     },
   },

@@ -61,7 +61,6 @@ export default {
   font-weight: 600;
   font-size: 12px;
   letter-spacing: normal;
-  color: var(--black);
   padding: 3px;
 }
 

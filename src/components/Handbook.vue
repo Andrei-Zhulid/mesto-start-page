@@ -4,10 +4,10 @@
     tile
   >
     <v-expansion-panel>
-      <v-expansion-panel-header class="m-text_deep-purple subtitle-1 pa-4">
+      <v-expansion-panel-header class="subtitle-1 deep-purple--text pa-4">
         Справочник Места
         <template #actions>
-          <v-icon color="primary">mdi-arrow-down-drop-circle-outline</v-icon>
+          <v-icon color="deep-purple">mdi-arrow-down-drop-circle-outline</v-icon>
         </template>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
@@ -48,7 +48,6 @@ export default {
 
 <style scoped>
 .m-link_font {
-  color: var(--black);
   font-size: 14px;
   line-height: 19px;
   letter-spacing: normal;

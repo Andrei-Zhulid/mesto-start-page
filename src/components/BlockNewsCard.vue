@@ -30,7 +30,6 @@ export default {
 
 <style scoped>
 .m-title {
-  color: var(--black);
   font-size: 14px;
   font-weight: bold;
   line-height: 19px;

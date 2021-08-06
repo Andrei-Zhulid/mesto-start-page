@@ -4,7 +4,7 @@
       <v-col>
         <MBanner class="font-weight-bold">{{
             banner.whiteText
-          }}&nbsp;<span class="m-text_lime">{{ banner.limeText }}</span>
+          }}&nbsp;<span class="lime--text">{{ banner.limeText }}</span>
         </MBanner>
       </v-col>
     </v-row>

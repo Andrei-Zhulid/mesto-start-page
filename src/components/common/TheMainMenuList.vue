@@ -6,7 +6,7 @@
       :to="item.slug"
       v-ripple="false"
       active-class="list-item_active"
-      class="list-item_hover_highlight m-text_black m-no-pseudo-opacity"
+      class="list-item_hover_highlight m-no-pseudo-opacity"
     >
       <v-list-item-icon class="list-item__icon my-0 mr-4">
         <component :is="item.icon"/>
@@ -54,13 +54,15 @@ export default {
 
 .list-item_active >>> .v-list-item__title,
 .list-item_hover_highlight:hover >>> .v-list-item__title {
-  color: var(--ligth-purple);
+  /*noinspection CssUnresolvedCustomProperty*/
+  color: var(--v-light-purple-base);
 }
 
 /* Exclude icons made by image (e.g. openland.svg) */
 .list-item_active >>> path:not([fill^="url"]),
 .list-item_hover_highlight:hover >>> path:not([fill^="url"]) {
-  fill: var(--ligth-purple);
+  /*noinspection CssUnresolvedCustomProperty*/
+  fill: var(--v-light-purple-base);
 }
 
 /* Apply just for icons made by image (e.g. openland.svg) */
