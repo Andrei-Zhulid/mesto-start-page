@@ -4,7 +4,7 @@
     flat
     tile
     v-ripple="false"
-    class="fill-height m-no-pseudo-opacity"
+    class="fill-height no-pseudo-opacity"
   >
     <v-card-title class="subtitle-1 pb-2">
       <component
@@ -13,7 +13,7 @@
       />
       {{ project.title }}
     </v-card-title>
-    <v-card-text class="card__text text--primary">{{ project.description }}</v-card-text>
+    <v-card-text class="card__text_font text--primary">{{ project.description }}</v-card-text>
   </v-card>
 </template>
 
@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.card__text.v-card__text {
+.card__text_font.v-card__text {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: normal;

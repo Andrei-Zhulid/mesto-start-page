@@ -4,10 +4,10 @@
     flat
     tile
     v-ripple="false"
-    class="m-no-pseudo-opacity"
+    class="no-pseudo-opacity"
   >
-    <v-card-title class="flex-nowrap justify-space-between py-3 pr-2">
-      <span class="m-title text-truncate mr-2">{{ news.title }}</span>
+    <v-card-title class="card__title_font flex-nowrap justify-space-between py-3 pr-2">
+      <span class="text-truncate mr-2">{{ news.title }}</span>
       <Icon style="overflow: visible"/>
     </v-card-title>
   </v-card>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-.m-title {
+.card__title_font {
   font-size: 14px;
   font-weight: bold;
   line-height: 19px;

@@ -1,24 +1,24 @@
 <template>
   <div class="d-flex align-center justify-space-between">
     <div class="d-flex align-center">
-      <span class="m-title deep-purple--text mr-3">
+      <span class="title_font deep-purple--text mr-3">
         <slot/>
       </span>
       <template v-for="(item, i) in summary">
         <span
           :key="'t'+i"
-          class="m-details text--secondary mr-1"
+          class="details_font text--secondary mr-1"
         >{{ item.title }}:</span>
         <span
           :key="'n'+i"
-          class="m-number deep-purple--text mr-1"
+          class="number_font deep-purple--text mr-1"
         >{{ item.number }}</span>
       </template>
     </div>
 
     <router-link
       :to="seeAllRoute"
-      class="m-link"
+      class="link_font"
     >Смотреть все
     </router-link>
   </div>
@@ -34,27 +34,27 @@ export default {
 </script>
 
 <style scoped>
-.m-title {
+.title_font {
   font-size: 20px;
   font-weight: bold;
   line-height: 27px;
   letter-spacing: normal;
 }
 
-.m-details {
+.details_font {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: normal;
 }
 
-.m-number {
+.number_font {
   font-size: 12px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: normal;
 }
 
-.m-link {
+.link_font {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;

@@ -6,7 +6,7 @@
       :to="item.slug"
       v-ripple="false"
       active-class="list-item_active"
-      class="list-item_hover_highlight m-no-pseudo-opacity"
+      class="list-item_hover_highlight no-pseudo-opacity"
     >
       <v-list-item-icon class="list-item__icon my-0 mr-4">
         <component :is="item.icon"/>

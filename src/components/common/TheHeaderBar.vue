@@ -4,9 +4,9 @@
     short
     flat
     dark
-    class="m-background_deep-purple_gradient px-2"
+    class="bg_deep-purple_gradient px-2"
   >
-    <v-container class="m-layout_width px-0">
+    <v-container class="layout_width px-0">
       <v-row align="center">
         <v-col
           md="3"

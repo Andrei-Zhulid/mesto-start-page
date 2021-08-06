@@ -1,16 +1,16 @@
-.m-layout_width {
+.layout_width {
   max-width: 1128px;
   min-width: 320px;
 }
 
-.m-background_deep-purple_gradient {
+.bg_deep-purple_gradient {
   background: radial-gradient(53.56% 53.56% at 50% 0%, #4a195b 0%, #320e3f 100%);
 }
 
-.m-background_gray {
+.bg_grey {
   background: #F1F1F1 !important;
 }
 
-.m-no-pseudo-opacity::before {
+.no-pseudo-opacity::before {
   opacity: 0 !important;
 }

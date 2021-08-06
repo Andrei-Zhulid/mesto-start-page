@@ -1,6 +1,6 @@
 <template>
   <div class="pa-6">
-    <v-container class="m-layout_width pa-0">
+    <v-container class="layout_width pa-0">
       <v-row>
         <v-col
           v-if="$vuetify.breakpoint.mdAndUp"

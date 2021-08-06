@@ -4,7 +4,7 @@
     tile
     dark
     elevation="0"
-    class="m-background_deep-purple_gradient px-6"
+    class="bg_deep-purple_gradient px-6"
   >
     <slot/>
   </v-btn>
