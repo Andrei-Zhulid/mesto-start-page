@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Handbook class="mb-6"/>
+  <div class="space-after-each-children">
+    <Handbook/>
     <BlockNews/>
   </div>
 </template>
@@ -16,3 +16,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.space-after-each-children > * {
+  margin-bottom: 24px;
+}
+</style>

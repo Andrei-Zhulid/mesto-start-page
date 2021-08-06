@@ -6,7 +6,7 @@
     >Новости
     </MBlockTitle>
 
-    <v-container class="px-0 py-4">
+    <v-container class="pa-0 pt-4">
       <v-row>
         <v-col
           v-for="(news, i) in newsItems"
