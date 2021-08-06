@@ -30,7 +30,7 @@
     </template>
     <v-list
       color="deep-purple"
-      class="profile-menu_font"
+      class="text-body-2 font-weight-bold"
     >
       <v-list-item
         v-for="(item, i) in items"
@@ -83,11 +83,5 @@ export default {
   text-indent: 0;
   min-width: unset !important;
   float: right;
-}
-
-.profile-menu_font {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: bold;
 }
 </style>

@@ -7,11 +7,11 @@
       <template v-for="(item, i) in summary">
         <span
           :key="'t'+i"
-          class="details_font text--secondary mr-1"
+          class="text-body-2 text--secondary mr-1"
         >{{ item.title }}:</span>
         <span
           :key="'n'+i"
-          class="number_font deep-purple--text mr-1"
+          class="text-body-2 font-weight-medium deep-purple--text mr-1"
         >{{ item.number }}</span>
       </template>
     </div>
@@ -38,19 +38,6 @@ export default {
   font-size: 20px;
   font-weight: bold;
   line-height: 27px;
-  letter-spacing: normal;
-}
-
-.details_font {
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: normal;
-}
-
-.number_font {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 15px;
   letter-spacing: normal;
 }
 

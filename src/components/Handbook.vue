@@ -23,7 +23,7 @@
             >
               <router-link
                 :to="{ name: link.routeName }"
-                class="link_font"
+                class="text-body-1 text-decoration-none"
               >{{ link.title }}
               </router-link>
             </v-col>
@@ -45,12 +45,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.link_font {
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: normal;
-  text-decoration: none;
-}
-</style>

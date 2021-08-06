@@ -60,6 +60,7 @@ export default {
 .email.v-text-field >>> input {
   font-weight: 600;
   font-size: 12px;
+  line-height: 16px;
   letter-spacing: normal;
   padding: 3px;
 }

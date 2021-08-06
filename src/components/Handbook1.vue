@@ -22,8 +22,8 @@
             class="bg_grey fill-height no-pseudo-opacity"
           >
             <v-card-text
-              class="text--primary body-1"
-              style="padding: 10px 16px 11px 16px;"
+              class="text--primary"
+              style="padding: 9px 16px"
             >{{ section.title }}
             </v-card-text>
           </v-card>
