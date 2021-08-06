@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "title": "Миссия и ценности Места",
+      "routeName": "NotFound"
+    },
+    {
+      "title": "Правила комьюнити",
+      "routeName": "NotFound"
+    },
+    {
+      "title": "Часто задаваемые вопросы",
+      "routeName": "NotFound"
+    }
+  ]
+}
