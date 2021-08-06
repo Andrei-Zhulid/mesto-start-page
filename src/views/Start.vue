@@ -34,7 +34,7 @@
 
 <script>
 import MBanner from '@/components/MBanner.vue'
-import Handbook from '@/components/Handbook'
+import Handbook from '@/components/Handbook1'
 import ProjectCard from '@/components/ProjectCard'
 import SocialLinks from '@/components/SocialLinks'
 import data from '@/data/viewStart.json'
