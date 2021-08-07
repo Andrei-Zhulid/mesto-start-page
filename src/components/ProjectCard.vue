@@ -1,8 +1,6 @@
 <template>
   <v-card
     :href="project.link"
-    flat
-    tile
     v-ripple="false"
     class="fill-height no-pseudo-opacity"
   >

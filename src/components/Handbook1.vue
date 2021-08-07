@@ -1,9 +1,5 @@
 <template>
-  <v-card
-    flat
-    tile
-    class="pa-3 pb-4"
-  >
+  <v-card class="pa-3 pb-4">
     <v-card-title class="subtitle-1 deep-purple--text pa-3 pb-2">{{ handbook.title }}</v-card-title>
     <v-container>
       <v-row>
@@ -16,8 +12,6 @@
         >
           <v-card
             :href="section.link"
-            flat
-            tile
             v-ripple="false"
             class="bg_grey fill-height no-pseudo-opacity"
           >

@@ -1,8 +1,6 @@
 <template>
   <v-card
     :to="{name: news.routeName, params: {id: news.articleId }}"
-    flat
-    tile
     v-ripple="false"
     class="no-pseudo-opacity"
   >
