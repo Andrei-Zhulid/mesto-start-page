@@ -20,8 +20,23 @@ const routes = [
     component: () => import('@/views/UniversityStub'),
   },
   {
+    path: '/handbook/:id?',
+    name: 'Handbook',
+    component: () => import('@/views/NotImplemented'),
+  },
+  {
+    path: '/news/:id?',
+    name: 'News',
+    component: () => import('@/views/NotImplemented'),
+  },
+  {
+    path: '/user/:id?',
+    name: 'User',
+    component: () => import('@/views/NotImplemented'),
+  },
+  {
     path: '*',
-    name: 'NotFound',
+    name: 'NotImplemented',
     component: () => import('@/views/NotImplemented'),
   },
 ]

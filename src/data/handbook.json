@@ -2,15 +2,30 @@
   "links": [
     {
       "title": "Миссия и ценности Места",
-      "routeName": "NotFound"
+      "route": {
+        "name": "Handbook",
+        "params": {
+          "id": "mission"
+        }
+      }
     },
     {
       "title": "Правила комьюнити",
-      "routeName": "NotFound"
+      "route": {
+        "name": "Handbook",
+        "params": {
+          "id": "rules"
+        }
+      }
     },
     {
       "title": "Часто задаваемые вопросы",
-      "routeName": "NotFound"
+      "route": {
+        "name": "Handbook",
+        "params": {
+          "id": "faq"
+        }
+      }
     }
   ]
 }

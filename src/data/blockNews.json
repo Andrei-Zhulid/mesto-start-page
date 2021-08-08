@@ -1,20 +1,31 @@
 {
-  "news": [
-    {
-      "title": "Mission Space подняли 100 мультов и не знают, что делать",
-      "routeName": "NotFound",
-      "articleId": "mission-space"
-    },
-    {
-      "title": "Как сделать питч презентацию и не уснуть во время",
-      "routeName": "NotFound",
-      "articleId": "how-to-make-a-speech"
-    }
-  ],
+  "seeAllRoute": {
+    "name": "News"
+  },
   "summary": [
     {
       "title": "Сегодня",
       "number": 2
+    }
+  ],
+  "news": [
+    {
+      "title": "Mission Space подняли 100 мультов и не знают, что делать",
+      "route": {
+        "name": "News",
+        "params": {
+          "id": "mission-space"
+        }
+      }
+    },
+    {
+      "title": "Как сделать питч презентацию и не уснуть во время",
+      "route": {
+        "name": "News",
+        "params": {
+          "id": "how-to-make-a-speech"
+        }
+      }
     }
   ]
 }

@@ -2,7 +2,7 @@
   <div>
     <MBlockTitle
       :summary="summary"
-      :seeAllRoute="{ name: 'NotFound'}"
+      :seeAllRoute="seeAllRoute"
     >Новости
     </MBlockTitle>
 
@@ -36,6 +36,7 @@ export default {
     return {
       newsItems: data.news,
       summary: data.summary,
+      seeAllRoute: data.seeAllRoute,
     }
   },
 }

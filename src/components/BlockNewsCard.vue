@@ -1,6 +1,6 @@
 <template>
   <v-card
-    :to="{name: news.routeName, params: {id: news.articleId }}"
+    :to="news.route"
     v-ripple="false"
     class="no-pseudo-opacity"
   >

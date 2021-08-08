@@ -22,7 +22,7 @@
               class="pa-0"
             >
               <router-link
-                :to="{ name: link.routeName }"
+                :to="link.route"
                 class="text-body-1 text-decoration-none"
               >{{ link.title }}
               </router-link>

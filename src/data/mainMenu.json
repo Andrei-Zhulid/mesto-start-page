@@ -3,32 +3,32 @@
     {
       "icon": "Explore",
       "title": "Навигатор",
-      "slug": "navigator"
+      "slug": "/navigator"
     },
     {
       "icon": "google-calendar",
       "title": "События",
-      "slug": "events"
+      "slug": "/events"
     },
     {
       "icon": "user-list",
       "title": "Участники",
-      "slug": "users"
+      "slug": "/users"
     },
     {
       "icon": "groups",
       "title": "Сообщества",
-      "slug": "groups"
+      "slug": "/groups"
     },
     {
       "icon": "clap",
       "title": "Взаимопомощь",
-      "slug": "help"
+      "slug": "/help"
     },
     {
       "icon": "education",
       "title": "Университет",
-      "slug": "university"
+      "slug": "/university"
     },
     {
       "icon": "contacts",
