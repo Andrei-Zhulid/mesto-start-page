@@ -1,4 +1,5 @@
 $body-font-family: Manrope;
+$border-radius-root: 0;
 $material-light: (
   'text': (
     'primary': #16061C,
@@ -6,9 +7,10 @@ $material-light: (
   )
 );
 
+$avatar-border-radius: 0;
+
 $list-item-min-height: 24px;
 
-$card-border-radius: 0;
 $card-elevation: 0;
 
 $expansion-panel-active-header-min-height: 48px;

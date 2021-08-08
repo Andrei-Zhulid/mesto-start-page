@@ -17,10 +17,7 @@
         class="user-profile px-0"
       >
         <span class="user-name_dot-after subtitle-1 d-none d-sm-flex mr-4">{{ user.name }}</span>
-        <v-avatar
-          tile
-          size="40"
-        >
+        <v-avatar size="40">
           <v-img
             :src="user.avatar"
             :alt="user.name"
