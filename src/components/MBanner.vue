@@ -1,7 +1,7 @@
 <template>
   <v-sheet
     dark
-    class="bg_deep-purple_gradient d-flex align-center justify-space-between pa-5"
+    class="bg_purple_gradient d-flex align-center justify-space-between pa-5"
   >
     <div class="mr-5">
       <LogoLong class="d-flex"/>
