@@ -1,52 +1,33 @@
 <template>
-  <div>
-    <MBlockTitle
-      :summary="summary"
-      :seeAllRoute="seeAllRoute"
-      class="mb-4"
-    >Ближайшие события
-    </MBlockTitle>
-
-    <v-container class="pa-0">
-      <v-row>
-        <v-col
-          v-for="(event, i) in events"
-          :key="i"
-          cols="12"
-          sm="6"
-          lg="4"
-        >
-          <BlockEventsCard
-            :event="event"
-            class="fill-height"
-          />
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+  <MBlock
+    v-bind="data"
+    :cols="12"
+    :sm="6"
+    :lg="4"
+    v-slot="slotProps"
+  >
+    <BlockEventsCard
+      :event="slotProps.item"
+      class="fill-height"
+    />
+  </MBlock>
 </template>
 
 <script>
 import data from '@/data/blockEvents.json'
-import MBlockTitle from '@/components/MBlockTitle'
 import BlockEventsCard from '@/components/BlockEventsCard'
+import MBlock from '@/components/MBlock'
 
 export default {
   components: {
+    MBlock,
     BlockEventsCard,
-    MBlockTitle,
   },
 
   data () {
     return {
-      summary: data.summary,
-      events: data.events,
-      seeAllRoute: data.seeAllRoute,
+      data,
     }
   },
 }
 </script>
-
-<style scoped>
-
-</style>
