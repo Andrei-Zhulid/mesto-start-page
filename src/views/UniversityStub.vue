@@ -23,7 +23,7 @@
         class="email flex-grow-0 mr-4"
       />
       <MButton
-        x-small
+        class="text-body-2"
         style="font-weight: 600"
       >Я в деле
       </MButton>
