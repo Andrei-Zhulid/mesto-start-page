@@ -62,7 +62,7 @@
       "route": {
         "name": "Event",
         "params": {
-          "id": "how-ware-the-holidays"
+          "id": "how-were-the-holidays"
         }
       },
       "host": {

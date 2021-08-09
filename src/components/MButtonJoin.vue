@@ -1,7 +1,7 @@
 <template>
   <v-btn
     v-bind="$attrs"
-    @click="registerToEvent"
+    @click.prevent="registerToEvent"
     color="light-grey"
     elevation="0"
     tile

@@ -1,5 +1,9 @@
 <template>
-  <v-card class="pa-4 pb-10">
+  <v-card
+    :to="event.route"
+    v-ripple="false"
+    class="no-pseudo-opacity pa-4 pb-10"
+  >
     <div class="d-flex align-center mb-2">
       <div class="text-body-2 font-weight-bold text-no-wrap">
         <span class="deep-purple--text text-capitalize">{{ event.date | dateTimeFormat('ddd MMM D') }}</span>
