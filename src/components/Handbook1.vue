@@ -13,7 +13,7 @@
           <v-card
             :href="section.link"
             v-ripple="false"
-            class="bg_grey fill-height no-pseudo-opacity"
+            class="light-grey fill-height no-pseudo-opacity"
           >
             <v-card-text
               class="text--primary"

@@ -1,9 +1,10 @@
 $body-font-family: Manrope;
 $border-radius-root: 0;
 $material-light: (
+  'background': var(--v-light-grey-base),
   'text': (
-    'primary': #16061C,
-    'secondary': #727272,
+    'primary': var(--v-primary-text-base),
+    'secondary': var(--v-secondary-text-base),
   )
 );
 
