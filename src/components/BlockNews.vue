@@ -3,10 +3,11 @@
     <MBlockTitle
       :summary="summary"
       :seeAllRoute="seeAllRoute"
+      class="mb-4"
     >Новости
     </MBlockTitle>
 
-    <v-container class="pa-0 pt-4">
+    <v-container class="pa-0">
       <v-row>
         <v-col
           v-for="(news, i) in newsItems"
