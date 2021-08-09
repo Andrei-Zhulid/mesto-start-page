@@ -2,17 +2,20 @@
   <div class="space-after-each-children">
     <Handbook/>
     <BlockNews/>
+    <BlockEvents/>
   </div>
 </template>
 
 <script>
-import BlockNews from '@/components/BlockNews'
 import Handbook from '@/components/Handbook'
+import BlockNews from '@/components/BlockNews'
+import BlockEvents from '@/components/BlockEvents'
 
 export default {
   components: {
     Handbook,
     BlockNews,
+    BlockEvents,
   },
 }
 </script>

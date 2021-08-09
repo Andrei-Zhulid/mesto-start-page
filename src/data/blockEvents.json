@@ -1,0 +1,87 @@
+{
+  "seeAllRoute": {
+    "name": "Event"
+  },
+  "summary": [
+    {
+      "title": "Всего",
+      "number": 45
+    },
+    {
+      "title": "Сегодня",
+      "number": 4
+    }
+  ],
+  "events": [
+    {
+      "date": "2014-12-04T18:00:00.000+02:00",
+      "tag": "Zoom",
+      "name": "Angel Talks #32. Алексей Поспехов (Mission Space) и Ко.",
+      "route": {
+        "name": "Event",
+        "params": {
+          "id": "angel-talks-32"
+        }
+      },
+      "host": {
+        "name": "Angel Talks",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      },
+      "attendees": [
+        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+        "https://cdn.mesto.co/5/1604680285968.png",
+        "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "date": "2014-12-05T12:30:00.000+02:00",
+      "tag": "Zoom",
+      "name": "Как сделать питч презентацию для инвесторов",
+      "route": {
+        "name": "Event",
+        "params": {
+          "id": "how-to-make-a-speech"
+        }
+      },
+      "host": {
+        "name": "Идеальный штурм",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      },
+      "attendees": [
+        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+        "https://cdn.mesto.co/5/1604680285968.png"
+      ]
+    },
+    {
+      "date": "2014-12-08T22:00:00.000+02:00",
+      "name": "Как прошли праздники?",
+      "route": {
+        "name": "Event",
+        "params": {
+          "id": "how-ware-the-holidays"
+        }
+      },
+      "host": {
+        "name": "M.Music",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      },
+      "attendees": [
+        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+        "https://cdn.mesto.co/5/1604680285968.png",
+        "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+}
