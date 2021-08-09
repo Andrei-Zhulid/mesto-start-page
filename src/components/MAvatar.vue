@@ -5,7 +5,7 @@
     </v-avatar>
 
     <div
-      v-if="!!$slots.default"
+      v-if="$slots.default"
       class="text-body-2 font-weight-bold ml-2"
     >
       <slot/>
