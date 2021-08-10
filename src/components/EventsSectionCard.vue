@@ -1,5 +1,8 @@
 <template>
-  <MCard :to="event.route">
+  <MCard
+    :title="event.name"
+    :to="event.route"
+  >
     <template #header>
       <div class="d-flex align-center">
         <div class="text-body-2 font-weight-bold text-no-wrap">
@@ -20,8 +23,6 @@
     </template>
 
     <template #default>
-      <span class="two-lines text-subtitle-1 mb-2">{{ event.name }}</span>
-
       <MAvatar
         :src="event.host.avatar"
         class="text-body-2 font-weight-bold"
@@ -78,24 +79,6 @@ export default {
 </script>
 
 <style scoped>
-/* Styles if a browser doesn't support -webkit-line-clamp */
-.two-lines {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-/* Styles if a browser supports -webkit-line-clamp. Should be placed below .two-line class to overwrite it. */
-@supports (-webkit-line-clamp: 2) {
-  .two-lines {
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-}
-
 .tag_font.v-chip {
   font-weight: 500;
   font-size: 11px;
