@@ -1,0 +1,53 @@
+{
+  "title": "Взаимопомощь",
+  "seeAllRoute": {
+    "name": "Help"
+  },
+  "summary": [
+    {
+      "title": "Всего",
+      "number": 134
+    }
+  ],
+  "items": [
+    {
+      "title": "Изучение языков. Куда бежать?",
+      "route": {
+        "name": "Help",
+        "params": {
+          "id": "language-learning"
+        }
+      },
+      "author": {
+        "name": "Алексей Кончаловский",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      }
+    },
+    {
+      "title": "Налоговый вычет",
+      "route": {
+        "name": "Help",
+        "params": {
+          "id": "tax-deduction"
+        }
+      },
+      "author": {
+        "name": "Алексей Кончаловский",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      }
+    },
+    {
+      "title": "Ищу директора по маркетингу или начальника отдела",
+      "route": {
+        "name": "Help",
+        "params": {
+          "id": "looking-for-a-director"
+        }
+      },
+      "author": {
+        "name": "Алексей Кончаловский",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      }
+    }
+  ]
+}

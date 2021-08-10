@@ -40,6 +40,11 @@ const routes = [
     component: () => import('@/views/NotImplemented'),
   },
   {
+    path: '/event/:id?',
+    name: 'Help',
+    component: () => import('@/views/NotImplemented'),
+  },
+  {
     path: '*',
     name: 'NotImplemented',
     component: () => import('@/views/NotImplemented'),
