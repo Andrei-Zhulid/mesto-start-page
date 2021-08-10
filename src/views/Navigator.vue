@@ -1,21 +1,21 @@
 <template>
   <div class="space-after-each-children">
     <Handbook/>
-    <BlockNews/>
-    <BlockEvents/>
+    <NewsSection/>
+    <EventsSection/>
   </div>
 </template>
 
 <script>
 import Handbook from '@/components/Handbook'
-import BlockNews from '@/components/BlockNews'
-import BlockEvents from '@/components/BlockEvents'
+import NewsSection from '@/components/NewsSection'
+import EventsSection from '@/components/EventsSection'
 
 export default {
   components: {
     Handbook,
-    BlockNews,
-    BlockEvents,
+    NewsSection,
+    EventsSection,
   },
 }
 </script>

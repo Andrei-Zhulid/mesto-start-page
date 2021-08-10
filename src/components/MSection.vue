@@ -1,11 +1,11 @@
 <template>
   <div>
-    <MBlockTitle
+    <MSectionTitle
       :summary="summary"
       :seeAllRoute="seeAllRoute"
       class="mb-4"
     >{{ title }}
-    </MBlockTitle>
+    </MSectionTitle>
 
     <v-container class="pa-0">
       <v-row>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import MBlockTitle from '@/components/MBlockTitle'
+import MSectionTitle from '@/components/MSectionTitle'
 
 const column = {
   type: [Boolean, Number],
@@ -36,7 +36,7 @@ const column = {
 }
 
 export default {
-  components: { MBlockTitle },
+  components: { MSectionTitle },
 
   props: {
     summary: Array,

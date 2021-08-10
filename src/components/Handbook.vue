@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import data from '@/data/handbook.json'
+import data from '@/data/Navigator/handbook.json'
 
 export default {
   data () {
