@@ -7,7 +7,10 @@
     >{{ title }}
     </MSectionTitle>
 
-    <v-container class="pa-0">
+    <v-container
+      v-if="items"
+      class="pa-0"
+    >
       <v-row>
         <!-- Show the first 3 items -->
         <v-col
