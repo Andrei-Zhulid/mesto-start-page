@@ -9,8 +9,9 @@
 
     <v-container class="pa-0">
       <v-row>
+        <!-- Show the first 3 items -->
         <v-col
-          v-for="(item, i) in items"
+          v-for="(item, i) in items.slice(0, 3)"
           :key="i"
           :cols="cols"
           :sm="sm"
@@ -18,6 +19,7 @@
           :lg="lg"
           :xl="xl"
         >
+          <!--suppress HtmlUnknownAttribute -->
           <slot :item="item"/>
         </v-col>
       </v-row>

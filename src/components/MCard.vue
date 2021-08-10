@@ -25,7 +25,7 @@
 <script>
 export default {
   props: {
-    to: Object,
+    to: [String, Object],
   },
 }
 </script>
