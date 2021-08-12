@@ -4,6 +4,7 @@
     <NewsSection/>
     <EventsSection/>
     <HelpSection/>
+    <UsersSection/>
   </div>
 </template>
 
@@ -12,9 +13,11 @@ import Handbook from '@/components/Handbook'
 import NewsSection from '@/components/NewsSection'
 import EventsSection from '@/components/EventsSection'
 import HelpSection from '@/components/HelpSection'
+import UsersSection from '@/components/UsersSection'
 
 export default {
   components: {
+    UsersSection,
     Handbook,
     NewsSection,
     EventsSection,

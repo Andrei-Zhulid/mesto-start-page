@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center">
+  <div class="d-flex">
     <v-avatar
       :size="size"
       :class="{ 'overflow-visible': status }"
@@ -14,7 +14,7 @@
 
     <div
       v-if="$slots.default"
-      class="text-body-2 font-weight-bold ml-2"
+      class="d-flex align-center text-body-2 font-weight-bold ml-2"
     >
       <slot/>
     </div>

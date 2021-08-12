@@ -1,0 +1,64 @@
+{
+  "title": "Новые участники",
+  "seeAllRoute": {
+    "name": "User"
+  },
+  "items": [
+    {
+      "name": "Esther Howard",
+      "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+      "online": true,
+      "location": "St.Petersburg, Russia",
+      "route": {
+        "name": "User",
+        "params": {
+          "id": "esther-howard"
+        }
+      },
+      "skills": [
+        "ai",
+        "marketing",
+        "consultation",
+        "team",
+        "analytics"
+      ]
+    },
+    {
+      "name": "Cameron Williamson",
+      "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+      "online": false,
+      "location": "St.Petersburg, Russia",
+      "route": {
+        "name": "User",
+        "params": {
+          "id": "cameron-williamson"
+        }
+      },
+      "skills": [
+        "marketing",
+        "consultation",
+        "team",
+        "consulting"
+      ]
+    },
+    {
+      "name": "Алексей Гончар",
+      "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+      "online": true,
+      "location": "St.Petersburg, Russia",
+      "route": {
+        "name": "User",
+        "params": {
+          "id": "aleksei-gonchar"
+        }
+      },
+      "skills": [
+        "team",
+        "analytics",
+        "consulting",
+        "eco",
+        "fintech"
+      ]
+    }
+  ]
+}
