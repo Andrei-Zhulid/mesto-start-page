@@ -16,7 +16,7 @@
           color="lime"
           label
           x-small
-          class="tag_font px-1"
+          class="text-caption px-1"
         >{{ event.tag }}
         </v-chip>
       </div>
@@ -77,12 +77,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.tag_font.v-chip {
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 14px;
-  letter-spacing: normal;
-}
-</style>
