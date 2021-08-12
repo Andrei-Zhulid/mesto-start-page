@@ -1,16 +1,19 @@
 <template>
   <div class="d-flex">
-    <v-avatar
-      :size="size"
-      :class="{ 'overflow-visible': status }"
+    <v-badge
+      :value="!!status"
+      :color="status === 'online' ? 'lime' : 'grey-purple'"
+      bottom
+      dot
+      tile
+      bordered
+      offset-x="7"
+      offset-y="7"
     >
-      <v-img :src="src"/>
-      <div
-        v-if="status"
-        class="status"
-        :class="status"
-      />
-    </v-avatar>
+      <v-avatar :size="size">
+        <v-img :src="src"/>
+      </v-avatar>
+    </v-badge>
 
     <div
       v-if="$slots.default"
@@ -39,26 +42,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.status {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  right: -2px;
-  bottom: -2px;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px 0 0 2px;
-}
-
-.status.online {
-  /*noinspection CssUnresolvedCustomProperty*/
-  background: var(--v-lime-base);
-}
-
-.status.offline {
-  /*noinspection CssUnresolvedCustomProperty*/
-  background: var(--v-grey-purple-base);
-}
-</style>
