@@ -16,7 +16,7 @@
           color="lime"
           label
           x-small
-          class="text-caption px-1"
+          class="text-caption no-pseudo-opacity px-1"
         >{{ event.tag }}
         </v-chip>
       </div>
