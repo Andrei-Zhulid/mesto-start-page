@@ -41,7 +41,7 @@
           <v-sheet
             height="40"
             color="rgba(255, 255, 255, 0.1)"
-            class="px-4 pt-1"
+            class="d-none d-sm-flex px-4 pt-1"
           >
             <v-text-field
               :placeholder="searchPlaceholder"
