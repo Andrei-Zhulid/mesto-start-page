@@ -3,27 +3,31 @@
     {
       "icon": "Explore",
       "title": "Навигатор",
-      "slug": "/navigator"
+      "slug": "/"
     },
     {
       "icon": "google-calendar",
       "title": "События",
-      "slug": "/events"
+      "slug": "/events",
+      "disabled": true
     },
     {
       "icon": "user-list",
       "title": "Участники",
-      "slug": "/users"
+      "slug": "/users",
+      "disabled": true
     },
     {
       "icon": "groups",
       "title": "Сообщества",
-      "slug": "/groups"
+      "slug": "/groups",
+      "disabled": true
     },
     {
       "icon": "clap",
       "title": "Взаимопомощь",
-      "slug": "/help"
+      "slug": "/help",
+      "disabled": true
     },
     {
       "icon": "education",
@@ -33,17 +37,20 @@
     {
       "icon": "contacts",
       "title": "Библиотека",
-      "slug": "library"
+      "slug": "library",
+      "disabled": true
     },
     {
       "icon": "contacts",
       "title": "Мои контакты",
-      "slug": "contacts"
+      "slug": "contacts",
+      "disabled": true
     },
     {
       "icon": "openland",
       "title": "Openland (Чат)",
-      "slug": "openland"
+      "slug": "openland",
+      "disabled": true
     }
   ]
 }

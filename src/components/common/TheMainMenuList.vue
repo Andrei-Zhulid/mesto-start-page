@@ -4,6 +4,7 @@
       v-for="(item, i) in items"
       :key="i"
       :to="item.slug"
+      :disabled="item.disabled"
       v-ripple="false"
       active-class="list-item_active"
       class="list-item_hover_highlight no-pseudo-opacity"
