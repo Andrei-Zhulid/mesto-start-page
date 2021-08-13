@@ -6,11 +6,20 @@
   "summary": [
     {
       "title": "Всего",
-      "number": 45
+      "number": 45,
+      "route": {
+        "name": "Event"
+      }
     },
     {
       "title": "Сегодня",
-      "number": 4
+      "number": 4,
+      "route": {
+        "name": "Event",
+        "params": {
+          "id": "today"
+        }
+      }
     }
   ],
   "items": [

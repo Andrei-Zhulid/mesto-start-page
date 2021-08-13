@@ -6,7 +6,10 @@
   "summary": [
     {
       "title": "Всего",
-      "number": 134
+      "number": 134,
+      "route": {
+        "name": "Help"
+      }
     }
   ],
   "items": [

@@ -10,3 +10,8 @@
 .no-pseudo-opacity::before {
   opacity: 0 !important;
 }
+
+a.active-on-hover:hover {
+  /*noinspection CssUnresolvedCustomProperty*/
+  color: var(--v-light-purple-base) !important;
+}

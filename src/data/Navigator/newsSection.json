@@ -6,7 +6,13 @@
   "summary": [
     {
       "title": "Сегодня",
-      "number": 2
+      "number": 2,
+      "route": {
+        "name": "News",
+        "params": {
+          "id": "today"
+        }
+      }
     }
   ],
   "items": [

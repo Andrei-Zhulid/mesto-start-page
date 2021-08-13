@@ -1,24 +1,29 @@
 <template>
   <div class="d-flex align-center justify-space-between">
     <div class="d-flex align-center">
-      <span class="title_font deep-purple--text mr-3">
+      <router-link
+        :to="seeAllRoute"
+        class="title_font deep-purple--text text-decoration-none active-on-hover mr-3"
+      >
         <slot/>
-      </span>
+      </router-link>
       <template v-for="(item, i) in summary">
         <span
           :key="'t'+i"
           class="text-body-2 text--secondary mr-1"
         >{{ item.title }}:</span>
-        <span
+        <router-link
           :key="'n'+i"
-          class="text-body-2 font-weight-medium deep-purple--text mr-1"
-        >{{ item.number }}</span>
+          :to="item.route"
+          class="text-body-2 font-weight-medium deep-purple--text text-decoration-none active-on-hover mr-1"
+        >{{ item.number }}
+        </router-link>
       </template>
     </div>
 
     <router-link
       :to="seeAllRoute"
-      class="link_font"
+      class="link_font active-on-hover"
     >Смотреть все
     </router-link>
   </div>
