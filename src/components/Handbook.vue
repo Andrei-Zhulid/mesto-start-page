@@ -4,7 +4,7 @@
     tile
   >
     <v-expansion-panel>
-      <v-expansion-panel-header class="subtitle-1 deep-purple--text pa-4">
+      <v-expansion-panel-header class="subtitle-1 deep-purple--text active-on-hover pa-4">
         Справочник Места
         <template #actions>
           <v-icon color="deep-purple">mdi-arrow-down-drop-circle-outline</v-icon>
