@@ -1,19 +1,13 @@
 <template>
   <div class="d-flex">
-    <v-badge
-      :value="!!status"
-      :color="status === 'online' ? 'lime' : 'grey-purple'"
-      bottom
-      dot
-      tile
-      bordered
-      offset-x="7"
-      offset-y="7"
+    <component
+      :is="wrapper"
+      v-bind="wrapperProps"
     >
       <v-avatar :size="size">
         <v-img :src="src"/>
       </v-avatar>
-    </v-badge>
+    </component>
 
     <div
       v-if="$slots.default"
@@ -25,6 +19,8 @@
 </template>
 
 <script>
+import MStatusBadge from '@/components/MStatusBadge'
+
 export default {
   props: {
     src: {
@@ -38,6 +34,15 @@ export default {
     status: {
       type: String,
       validator: (value) => ['online', 'offline'].includes(value),
+    },
+  },
+
+  computed: {
+    wrapper () {
+      return this.status ? MStatusBadge : 'div'
+    },
+    wrapperProps () {
+      return this.status ? { online: this.status === 'online' } : {}
     },
   },
 }
