@@ -27,6 +27,7 @@
       "date": "2014-12-04T18:00:00.000+02:00",
       "tag": "Zoom",
       "name": "Angel Talks #32. Алексей Поспехов (Mission Space) и Ко.",
+      "location": "St.Petersburg, Russia",
       "route": {
         "name": "Event",
         "params": {
@@ -51,6 +52,7 @@
       "date": "2014-12-05T12:30:00.000+02:00",
       "tag": "Zoom",
       "name": "Как сделать питч презентацию для инвесторов",
+      "location": "St.Petersburg, Russia",
       "route": {
         "name": "Event",
         "params": {
@@ -69,6 +71,7 @@
     {
       "date": "2014-12-08T22:00:00.000+02:00",
       "name": "Как прошли праздники?",
+      "location": "St.Petersburg, Russia",
       "route": {
         "name": "Event",
         "params": {

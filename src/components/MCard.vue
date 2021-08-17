@@ -8,20 +8,26 @@
     <slot name="header"/>
 
     <div
-      v-if="title || $slots.title"
+      v-if="title || $slots.title || subtitle || $slots.subtitle"
       :class="{ 'mt-2': $slots.header }"
     >
       <slot name="title">
         <span
           v-if="title"
-          class="two-lines text-subtitle-1 mb-2"
+          class="two-lines text-subtitle-1"
         >{{ title }}</span>
+      </slot>
+      <slot name="subtitle">
+        <span
+          v-if="subtitle"
+          class="text--secondary text-body-2 font-weight-medium"
+        >{{ subtitle }}</span>
       </slot>
     </div>
 
     <div
       v-if="$slots.default"
-      :class="{ 'mt-2': $slots.header || $slots.title }"
+      :class="{ 'mt-2': $slots.header || $slots.title || title || $slots.subtitle || subtitle }"
     >
       <slot/>
     </div>
@@ -41,6 +47,7 @@
 export default {
   props: {
     title: String,
+    subtitle: String,
     to: [String, Object],
   },
 }

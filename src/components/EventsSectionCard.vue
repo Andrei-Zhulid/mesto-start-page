@@ -1,6 +1,7 @@
 <template>
   <MCard
     :title="event.name"
+    :subtitle="event.location"
     :to="event.route"
   >
     <template #header>
