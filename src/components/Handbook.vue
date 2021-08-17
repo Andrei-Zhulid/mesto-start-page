@@ -11,15 +11,17 @@
         </template>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <v-container>
-          <v-row class="my-n4">
+        <v-container class="pa-0">
+          <v-row
+            no-gutters
+            class="mt-n1"
+          >
             <v-col
               v-for="(link, i) in links"
               :key="i"
               cols="12"
-              sm="6"
               md="4"
-              class="pa-0"
+              class="d-flex py-1"
             >
               <router-link
                 :to="link.route"
