@@ -49,8 +49,7 @@
     {
       "icon": "openland",
       "title": "Openland (Чат)",
-      "slug": "openland",
-      "disabled": true
+      "slug": "openland"
     }
   ]
 }

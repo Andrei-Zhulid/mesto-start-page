@@ -15,6 +15,11 @@ const routes = [
     component: () => import('@/views/UniversityStub'),
   },
   {
+    path: '/openland',
+    name: 'OpenLand',
+    component: () => import('@/views/Openland'),
+  },
+  {
     path: '/handbook/:id?',
     name: 'Handbook',
     component: () => import('@/views/NotImplemented'),
