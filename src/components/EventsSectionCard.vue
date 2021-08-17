@@ -42,10 +42,10 @@
         v-if="event.attendees.length >= 3"
         :src="event.attendees[2]"
       >
-            <span
-              v-if="event.attendees.length > 3"
-              class="ml-n1"
-            >+{{ event.attendees.length - 3 }}</span>
+        <span
+          v-if="event.attendees.length > 3"
+          class="ml-n1"
+        >+{{ event.attendees.length - 3 }}</span>
       </MAvatar>
 
       <v-spacer/>
