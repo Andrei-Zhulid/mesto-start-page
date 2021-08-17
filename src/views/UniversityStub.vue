@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="line-height: 22px">
     <v-sheet class="pa-4 mb-8">
       <span
         class="subtitle-1"
