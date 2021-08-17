@@ -3,13 +3,18 @@
     :to="to"
     v-ripple="false"
     class="no-pseudo-opacity pa-4"
-    :class="{ 'pb-14': $slots.footer }"
+    :class="{ 'pb-12': $slots.footer }"
   >
-    <slot name="header"/>
+    <div
+      v-if="$slots.header"
+      class="mb-2"
+    >
+      <slot name="header"/>
+    </div>
 
     <div
       v-if="title || $slots.title || subtitle || $slots.subtitle"
-      :class="{ 'mt-2': $slots.header }"
+      class="mb-2"
     >
       <slot name="title">
         <span
@@ -27,7 +32,7 @@
 
     <div
       v-if="$slots.default"
-      :class="{ 'mt-2': $slots.header || $slots.title || title || $slots.subtitle || subtitle }"
+      class="mb-2"
     >
       <slot/>
     </div>
