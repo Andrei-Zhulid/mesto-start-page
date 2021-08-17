@@ -12,9 +12,9 @@
     <template #footer>
       <div class="d-flex align-center text-body-2 font-weight-bold">
         <CommentsIcon style="margin-right: 2px"/>
-        5
+        {{ item.comments }}
         <OkIcon class="ml-2"/>
-        5
+        {{ item.reactions }}
       </div>
     </template>
   </MCard>
