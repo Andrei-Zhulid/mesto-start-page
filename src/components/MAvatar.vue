@@ -4,7 +4,10 @@
       :is="wrapper"
       v-bind="wrapperProps"
     >
-      <v-avatar :size="size">
+      <v-avatar
+        :size="size"
+        class="d-flex"
+      >
         <v-img :src="src"/>
       </v-avatar>
     </component>
