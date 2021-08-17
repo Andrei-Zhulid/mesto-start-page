@@ -35,7 +35,7 @@ const routes = [
     component: () => import('@/views/NotImplemented'),
   },
   {
-    path: '/event/:id?',
+    path: '/help/:id?',
     name: 'Help',
     component: () => import('@/views/NotImplemented'),
   },
