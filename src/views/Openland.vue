@@ -39,44 +39,36 @@
             href="https://oplnd.com/windows"
             target="_blank"
             rel="noopener noreferrer"
+            class="d-flex align-center mr-4"
           >
-            <v-img
-              :src="require('@/assets/openland/windows.png')"
-              alt="Windows installer"
-              max-height="22"
-              contain
-            />
+            <WindowsLogo class="mr-4"/>
+            Windows
           </a>
 
           <a
             href="https://oplnd.com/mac"
             target="_blank"
             rel="noopener noreferrer"
+            class="d-flex align-center mr-4"
           >
-            <v-img
-              :src="require('@/assets/openland/mac.png')"
-              alt="Mac OS installer"
-              max-height="22"
-              contain
-            />
+            <MacLogo class="mr-4"/>
+            Mac
           </a>
 
           <a
             href="https://oplnd.com/linux"
             target="_blank"
             rel="noopener noreferrer"
+            class="d-flex align-center"
           >
-            <v-img
-              :src="require('@/assets/openland/linux.png')"
-              alt="Linux installer"
-              max-height="22"
-              contain
-            />
+            <LinuxLogo class="mr-4"/>
+            Linux
           </a>
         </div>
       </div>
 
     </div>
+
     <span class="font-weight-bold">Место и Openland — как связаны?</span>
     <p>
       Место работает на базе платформы Опенленд, Юра Лифшиц — сооснователь Опенленд и один из со-создателей Места,
@@ -144,11 +136,17 @@
 <script>
 import AppStoreLogo from '@/assets/openland/home-intro-ios-2.svg'
 import AndroidStoreLogo from '@/assets/openland/home-intro-android-2.svg'
+import WindowsLogo from '@/assets/openland/win.svg'
+import MacLogo from '@/assets/openland/mac.svg'
+import LinuxLogo from '@/assets/openland/linux.svg'
 
 export default {
   components: {
     AppStoreLogo,
     AndroidStoreLogo,
+    WindowsLogo,
+    MacLogo,
+    LinuxLogo,
   },
 }
 </script>
@@ -160,4 +158,16 @@ export default {
   line-height: 27px;
   letter-spacing: normal;
 }
+
+.installer-link_font {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.installer-link_font > a {
+  text-decoration: none;
+}
+
 </style>
