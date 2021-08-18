@@ -44,7 +44,7 @@
             class="d-flex align-center mr-4"
           >
             <WindowsLogo class="mr-4"/>
-            Windows
+            <span>Windows</span>
           </a>
 
           <a
@@ -54,17 +54,17 @@
             class="d-flex align-center mr-4"
           >
             <MacLogo class="mr-4"/>
-            Mac
+            <span>Mac</span>
           </a>
 
           <a
             href="https://oplnd.com/linux"
             target="_blank"
             rel="noopener noreferrer"
-            class="d-flex align-center"
+            class="d-flex align-center mr-1"
           >
             <LinuxLogo class="mr-4"/>
-            Linux
+            <span>Linux</span>
           </a>
         </div>
       </div>
@@ -160,7 +160,7 @@ export default {
   letter-spacing: normal;
 }
 
-.installer-link_font {
+.installer-link_font span {
   font-size: 16px;
   line-height: 40px;
   font-weight: 600;
