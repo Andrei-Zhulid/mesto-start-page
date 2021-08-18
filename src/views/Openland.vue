@@ -1,40 +1,42 @@
 <template>
   <div style="line-height: 22px">
-    <span class="title_font deep-purple--text">Openland</span>
+    <span class="d-block title_font deep-purple--text mb-4">Openland</span>
 
     <p>Приветственное слово и информация об <strong>OpenLand</strong>!</p>
 
     <p>Все общение, на данный момент, происходит в этом месенджере. Чтобы присоединиться, скачайте и установите его на
       мобильное устройство:</p>
 
-    <div class="d-flex mb-8">
-      <v-btn
-        href="https://oplnd.com/ios"
-        target="_blank"
-        rel="noopener noreferrer"
-        color="black"
-        x-large
-        style="border-radius: 10px"
-        class="mr-6 px-0"
-      >
-        <AppStoreLogo/>
-      </v-btn>
+    <div class="d-flex flex-wrap mt-6">
+      <div class="mb-4">
+        <v-btn
+          href="https://oplnd.com/ios"
+          target="_blank"
+          rel="noopener noreferrer"
+          color="black"
+          x-large
+          style="border-radius: 10px"
+          class="mr-6 px-0"
+        >
+          <AppStoreLogo/>
+        </v-btn>
 
-      <v-btn
-        href="https://oplnd.com/android"
-        target="_blank"
-        rel="noopener noreferrer"
-        color="black"
-        x-large
-        style="border-radius: 10px"
-        class="mr-6 px-0"
-      >
-        <AndroidStoreLogo/>
-      </v-btn>
-      <!--      <a class="p3hf0ch" href="https://oplnd.com/mac" target="_blank" rel="noopener noreferrer"><img class="p4nmp92" src="/static/landing/icons/mac.svg" width="24" height="24"><span class="phnaj8">Mac</span></a><a class="p3hf0ch" href="https://oplnd.com/windows" target="_blank" rel="noopener noreferrer"><img class="p4nmp92" src="/static/landing/icons/win.svg" width="24" height="24"><span class="phnaj8">Windows</span></a><a class="p3hf0ch" href="https://oplnd.com/linux" target="_blank" rel="noopener noreferrer"><img class="p4nmp92" src="/static/landing/icons/linux.svg" width="24" height="24"><span class="phnaj8">Linux</span></a></div></span>-->
-      <div>
-        <p>Можно воспользоваться версиями для десктопа:</p>
-        <div class="d-flex">
+        <v-btn
+          href="https://oplnd.com/android"
+          target="_blank"
+          rel="noopener noreferrer"
+          color="black"
+          x-large
+          style="border-radius: 10px"
+          class="mr-6 px-0"
+        >
+          <AndroidStoreLogo/>
+        </v-btn>
+      </div>
+
+      <div class="mb-7">
+        <span>Можно воспользоваться версиями для десктопа:</span>
+        <div class="installer-link_font d-flex justify-space-between">
           <a
             href="https://oplnd.com/windows"
             target="_blank"
@@ -66,7 +68,6 @@
           </a>
         </div>
       </div>
-
     </div>
 
     <span class="font-weight-bold">Место и Openland — как связаны?</span>
