@@ -11,15 +11,10 @@
           &nbsp;<span class="grey-purple--text">/</span>&nbsp;
           <span class="deep-purple--text">{{ event.date | dateTimeFormat('H:mm') }}</span>
         </div>
+
         <v-spacer/>
-        <v-chip
-          v-if="event.tag"
-          color="lime"
-          label
-          x-small
-          class="text-caption no-pseudo-opacity px-1"
-        >{{ event.tag }}
-        </v-chip>
+
+        <PlatformTag :tag="event.tag"/>
       </div>
     </template>
 
@@ -60,9 +55,11 @@ import dateTimeFilter from '@/mixins/dateTimeFilter'
 import MAvatar from '@/components/MAvatar'
 import MButtonJoin from '@/components/MButtonJoin'
 import MCard from '@/components/MCard'
+import PlatformTag from '@/components/PlatformTag'
 
 export default {
   components: {
+    PlatformTag,
     MCard,
     MButtonJoin,
     MAvatar,
