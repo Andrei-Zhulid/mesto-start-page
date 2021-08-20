@@ -36,7 +36,7 @@ export default {
     },
     status: {
       type: String,
-      validator: (value) => ['online', 'offline'].includes(value),
+      validator: (value) => ['online', 'offline'].includes(value.toLocaleString()),
     },
   },
 
