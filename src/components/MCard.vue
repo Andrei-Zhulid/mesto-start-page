@@ -14,7 +14,7 @@
 
     <div
       v-if="title || $slots.title || subtitle || $slots.subtitle"
-      class="mb-2"
+      :class="{ 'mb-2': $slots.default || $slots.footer }"
     >
       <slot name="title">
         <span
@@ -32,7 +32,7 @@
 
     <div
       v-if="$slots.default"
-      class="mb-2"
+      :class="{ 'mb-2': $slots.footer }"
     >
       <slot/>
     </div>
