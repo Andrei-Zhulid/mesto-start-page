@@ -34,10 +34,7 @@
 
     <div
       v-if="$slots.default"
-      :class="{
-        'mt-2': title || $slots.title || subtitle || $slots.subtitle,
-        'mb-4': $slots.footer
-      }"
+      :class="{ 'mt-2': title || $slots.title || subtitle || $slots.subtitle }"
     >
       <slot/>
     </div>
@@ -45,7 +42,7 @@
     <v-footer
       v-if="$slots.footer"
       color="white"
-      class="pa-0"
+      class="pa-0 pt-4"
     >
       <slot name="footer"/>
     </v-footer>
