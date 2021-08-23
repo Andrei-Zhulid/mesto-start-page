@@ -11,30 +11,21 @@
       <slot name="header"/>
     </div>
 
-    <div
-      v-if="title || $slots.title"
-      class="flex-grow-1"
-    >
-      <slot name="title">
-        <span
-          v-if="title"
-          class="two-lines text-subtitle-1"
-        >{{ title }}</span>
-      </slot>
-    </div>
+    <span
+      v-if="title"
+      class="two-lines text-subtitle-1 flex-grow-1"
+    >{{ title }}</span>
 
-    <div v-if="subtitle || $slots.subtitle">
-      <slot name="subtitle">
-        <span
-          v-if="subtitle"
-          class="text--secondary text-body-2 font-weight-medium"
-        >{{ subtitle }}</span>
-      </slot>
+    <div v-if="subtitle">
+      <span
+        :class="{ 'mt-1': title }"
+        class="text--secondary text-body-2 font-weight-medium"
+      >{{ subtitle }}</span>
     </div>
 
     <div
       v-if="$slots.default"
-      :class="{ 'mt-2': title || $slots.title || subtitle || $slots.subtitle }"
+      :class="{ 'mt-2': title || subtitle }"
     >
       <slot/>
     </div>
