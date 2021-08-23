@@ -2,8 +2,7 @@
   <v-card
     :to="to"
     v-ripple="false"
-    class="no-pseudo-opacity pa-4"
-    :class="{ 'pb-12': $slots.footer }"
+    class="no-pseudo-opacity d-flex flex-column pa-4"
   >
     <div
       v-if="$slots.header"
@@ -13,8 +12,8 @@
     </div>
 
     <div
-      v-if="title || $slots.title || subtitle || $slots.subtitle"
-      :class="{ 'mb-2': $slots.default || $slots.footer }"
+      v-if="title || $slots.title"
+      class="flex-grow-1"
     >
       <slot name="title">
         <span
@@ -22,6 +21,9 @@
           class="two-lines text-subtitle-1"
         >{{ title }}</span>
       </slot>
+    </div>
+
+    <div v-if="subtitle || $slots.subtitle">
       <slot name="subtitle">
         <span
           v-if="subtitle"
@@ -32,7 +34,10 @@
 
     <div
       v-if="$slots.default"
-      :class="{ 'mb-2': $slots.footer }"
+      :class="{
+        'mt-2': title || $slots.title || subtitle || $slots.subtitle,
+        'mb-4': $slots.footer
+      }"
     >
       <slot/>
     </div>
@@ -40,8 +45,7 @@
     <v-footer
       v-if="$slots.footer"
       color="white"
-      absolute
-      class="pa-4 pt-0"
+      class="pa-0"
     >
       <slot name="footer"/>
     </v-footer>
