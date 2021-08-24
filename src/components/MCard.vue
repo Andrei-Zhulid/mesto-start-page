@@ -16,6 +16,7 @@
       class="two-lines text-subtitle-1 flex-grow-1"
     >{{ title }}</span>
 
+    <!-- div needs to add necessary margin in accordance with the design (5px top and 2px bottom) -->
     <div v-if="subtitle">
       <span
         :class="{ 'mt-1': title }"
