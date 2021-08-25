@@ -33,6 +33,15 @@
           "id": "how-to-make-a-speech"
         }
       }
+    },
+    {
+      "title": "Новость, видимая только на xs экране",
+      "route": {
+        "name": "News",
+        "params": {
+          "id": "always-hidden-news"
+        }
+      }
     }
   ]
 }

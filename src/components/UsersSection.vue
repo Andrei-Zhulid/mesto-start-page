@@ -4,6 +4,7 @@
     :cols="12"
     :sm="6"
     :lg="4"
+    :displayedItemsCount="{ xs: 3, sm: 4, lg: 3 }"
     v-slot="slotProps"
   >
     <UsersSectionCard

@@ -95,6 +95,31 @@
         "",
         ""
       ]
+    },
+    {
+      "date": "2014-12-04T18:00:00.000+02:00",
+      "tag": "Zoom",
+      "name": "Мероприятие, видимое только при показе 4х карточек",
+      "location": "St.Petersburg, Russia",
+      "route": {
+        "name": "Event",
+        "params": {
+          "id": "event-four"
+        }
+      },
+      "host": {
+        "name": "Mesto",
+        "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+      },
+      "attendees": [
+        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+        "https://cdn.mesto.co/5/1604680285968.png",
+        "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ]
 }

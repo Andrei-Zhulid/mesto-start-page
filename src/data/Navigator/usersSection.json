@@ -59,6 +59,25 @@
         "eco",
         "fintech"
       ]
+    },
+    {
+      "name": "Очень-очень-очень-очень-очень длинное имя пользователя",
+      "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
+      "online": true,
+      "location": "St.Petersburg, Russia",
+      "route": {
+        "name": "User",
+        "params": {
+          "id": "user-four"
+        }
+      },
+      "skills": [
+        "team",
+        "analytics",
+        "consulting",
+        "eco",
+        "fintech"
+      ]
     }
   ]
 }

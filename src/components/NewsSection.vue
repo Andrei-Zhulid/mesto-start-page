@@ -3,6 +3,7 @@
     v-bind="data"
     :cols="12"
     :sm="6"
+    :displayedItemsCount="{ xs: 3, sm: 2 }"
     v-slot="slotProps"
   >
     <NewsSectionCard :news="slotProps.item"/>
