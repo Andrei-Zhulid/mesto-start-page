@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="items">
     <MSectionTitle
       :summary="summary"
       :seeAllRoute="seeAllRoute"
@@ -7,10 +7,7 @@
     >{{ title }}
     </MSectionTitle>
 
-    <v-container
-      v-if="items"
-      class="pa-0"
-    >
+    <v-container class="pa-0">
       <v-row>
         <!-- Show the first 3 items -->
         <v-col
