@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="margin: 0 -2px">
+    <div class="d-flex ml-n1">
       <v-chip
         v-for="(skill, i) in skills"
         :key="i"
@@ -8,8 +8,7 @@
         x-small
         label
         outlined
-        class="skill-chip text-caption px-1"
-        style="margin: 0 2px"
+        class="skill-chip text-caption px-1 ml-1"
       >{{ skill }}
       </v-chip>
     </div>
