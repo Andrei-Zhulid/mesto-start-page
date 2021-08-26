@@ -50,23 +50,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-/* Styles if a browser doesn't support -webkit-line-clamp */
-.two-lines {
-  display: block;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-/* Styles if a browser supports -webkit-line-clamp. Should be placed below .two-line class to overwrite it. */
-@supports (-webkit-line-clamp: 2) {
-  .two-lines {
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-}
-</style>

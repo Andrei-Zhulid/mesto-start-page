@@ -11,7 +11,7 @@
       class="mb-3"
     >
       <div class="align-self-start d-flex flex-column ml-1">
-        <span class="deep-purple--text text-body-1 font-weight-bold mb-2">{{ user.name }}</span>
+        <span class="two-lines deep-purple--text text-body-1 font-weight-bold mb-2">{{ user.name }}</span>
         <span class="text--secondary font-weight-medium">{{ user.location }}</span>
       </div>
     </MAvatar>
