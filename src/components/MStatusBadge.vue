@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-n1">
     <v-badge
       :color="online ? 'lime' : 'grey-purple'"
       bottom
