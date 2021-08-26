@@ -34,7 +34,7 @@
     <v-footer
       v-if="$slots.footer"
       color="white"
-      class="pa-0 pt-4"
+      class="mt-auto pa-0 pt-4"
     >
       <slot name="footer"/>
     </v-footer>
