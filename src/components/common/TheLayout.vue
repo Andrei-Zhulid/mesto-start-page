@@ -13,7 +13,7 @@
           </v-sheet>
         </v-col>
         <v-col>
-          <router-view/>
+          <slot/>
         </v-col>
       </v-row>
     </v-container>

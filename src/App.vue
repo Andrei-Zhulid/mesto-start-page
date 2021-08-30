@@ -2,7 +2,9 @@
   <v-app>
     <TheHeaderBar/>
     <v-main>
-      <TheLayout/>
+      <TheLayout>
+        <router-view/>
+      </TheLayout>
     </v-main>
   </v-app>
 </template>
