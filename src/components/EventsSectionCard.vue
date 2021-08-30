@@ -19,29 +19,27 @@
     </template>
 
     <template #default>
-      <MAvatar
-        :src="event.host.avatar"
-        class="text-body-2 font-weight-bold"
-      >{{ event.host.name }}
-      </MAvatar>
+      <MCardAuthor :author="event.host"/>
     </template>
 
     <template #footer>
-      <MAvatar
-        v-for="(avatar, i) in event.attendees.slice(0, 2)"
-        :key="i"
-        :src="avatar"
-        class="mr-1"
-      />
-      <MAvatar
-        v-if="event.attendees.length >= 3"
-        :src="event.attendees[2]"
+      <div
+        v-if="event.attendees"
+        class="d-flex flex-nowrap align-center"
       >
+        <MAvatar
+          v-for="(attendee, i) in event.attendees.slice(0, 3)"
+          :key="i"
+          :src="attendee.avatar"
+          :name="attendee.name"
+          size="24"
+          class="mr-1"
+        />
         <span
-          v-if="event.attendees.length > 3"
-          class="ml-n1"
+          v-if="event.attendees.length >= 3"
+          class="text-body-2 font-weight-bold"
         >+{{ event.attendees.length - 3 }}</span>
-      </MAvatar>
+      </div>
 
       <v-spacer/>
 
@@ -56,9 +54,11 @@ import MAvatar from '@/components/MAvatar'
 import MButtonJoin from '@/components/MButtonJoin'
 import MCard from '@/components/MCard'
 import PlatformTag from '@/components/PlatformTag'
+import MCardAuthor from '@/components/MCardAuthor'
 
 export default {
   components: {
+    MCardAuthor,
     PlatformTag,
     MCard,
     MButtonJoin,

@@ -39,13 +39,22 @@
         "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
       },
       "attendees": [
-        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
-        "https://cdn.mesto.co/5/1604680285968.png",
-        "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/",
-        "",
-        "",
-        "",
-        ""
+        {
+          "name": "Andrei Zhulid",
+          "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+        },
+        {
+          "name": "Dmitry Bondarev",
+          "avatar": "https://cdn.mesto.co/5/1604680285968.png"
+        },
+        {
+          "name": "Alexandr Daitkhe",
+          "avatar": "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/"
+        },
+        {},
+        {},
+        {},
+        {}
       ]
     },
     {
@@ -64,8 +73,14 @@
         "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
       },
       "attendees": [
-        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
-        "https://cdn.mesto.co/5/1604680285968.png"
+        {
+          "name": "Andrei Zhulid",
+          "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+        },
+        {
+          "name": "Dmitry Bondarev",
+          "avatar": "https://cdn.mesto.co/5/1604680285968.png"
+        }
       ]
     },
     {
@@ -83,17 +98,23 @@
         "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
       },
       "attendees": [
-        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
-        "https://cdn.mesto.co/5/1604680285968.png",
-        "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        {
+          "name": "andrei zhulid"
+        },
+        {
+          "name": "aaa bb ccc x"
+        },
+        {
+          "name": "a"
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
       ]
     },
     {
@@ -112,13 +133,22 @@
         "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
       },
       "attendees": [
-        "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/",
-        "https://cdn.mesto.co/5/1604680285968.png",
-        "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/",
-        "",
-        "",
-        "",
-        ""
+        {
+          "name": "Andrei Zhulid",
+          "avatar": "https://ucarecdn.com/380dd41c-2a91-4c3b-9380-3381b03a2947/-/crop/1024x1024/0,0/"
+        },
+        {
+          "name": "Dmitry Bondarev",
+          "avatar": "https://cdn.mesto.co/5/1604680285968.png"
+        },
+        {
+          "name": "Alexandr Daitkhe",
+          "avatar": "https://ucarecdn.com/962cb071-dcb0-400c-b332-ab6bf0dca869/-/crop/320x320/0,0/"
+        },
+        {},
+        {},
+        {},
+        {}
       ]
     }
   ]

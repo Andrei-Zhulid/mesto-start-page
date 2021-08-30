@@ -8,7 +8,7 @@
         x-small
         label
         outlined
-        class="skill-chip text-caption px-1 ml-1"
+        class="skill-chip flex-shrink-0 text-caption px-1 ml-1"
       >{{ skill }}
       </v-chip>
     </div>

@@ -1,51 +1,34 @@
 <template>
-  <div class="d-flex">
-    <component
-      :is="wrapper"
-      v-bind="wrapperProps"
-    >
-      <v-avatar
-        :size="size"
-        class="d-flex"
-      >
-        <v-img :src="src"/>
-      </v-avatar>
-    </component>
-
-    <div
-      v-if="$slots.default"
-      class="d-flex align-center text-body-2 font-weight-bold ml-2"
-    >
-      <slot/>
-    </div>
-  </div>
+  <v-avatar
+    v-bind="$attrs"
+    color="deep-purple"
+  >
+    <v-img
+      v-if="src"
+      :src="src"
+      :alt="name"
+    />
+    <span
+      v-else
+      class="text-body-2 text-uppercase lime--text"
+    >{{ initials }}</span>
+  </v-avatar>
 </template>
 
 <script>
-import MStatusBadge from '@/components/MStatusBadge'
-
 export default {
   props: {
-    src: {
+    src: String,
+    name: {
       type: String,
       required: true,
-    },
-    size: {
-      type: Number,
-      default: 24,
-    },
-    status: {
-      type: String,
-      validator: (value) => ['online', 'offline'].includes(value.toLocaleString()),
+      validator: (value) => /\p{L}/u.test(value), // Name should contain at least one letter
     },
   },
 
   computed: {
-    wrapper () {
-      return this.status ? MStatusBadge : 'div'
-    },
-    wrapperProps () {
-      return this.status ? { online: this.status === 'online' } : {}
+    initials () {
+      return this.name.match(/\b(\w)/g).slice(0, 2).join('') // Get the first two initials
     },
   },
 }

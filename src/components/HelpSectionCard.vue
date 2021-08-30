@@ -3,11 +3,7 @@
     :title="item.title"
     :to="item.route"
   >
-    <MAvatar
-      :src="item.author.avatar"
-      class="text-body-2 font-weight-bold"
-    >{{ item.author.name }}
-    </MAvatar>
+    <MCardAuthor :author="item.author"/>
 
     <template #footer>
       <div class="d-flex align-center text-body-2 font-weight-bold">
@@ -22,13 +18,13 @@
 
 <script>
 import MCard from '@/components/MCard'
-import MAvatar from '@/components/MAvatar'
 import CommentsIcon from '@/assets/icons/comment.svg'
 import OkIcon from '@/assets/icons/Hand_ok.svg'
+import MCardAuthor from '@/components/MCardAuthor'
 
 export default {
   components: {
-    MAvatar,
+    MCardAuthor,
     MCard,
     CommentsIcon,
     OkIcon,

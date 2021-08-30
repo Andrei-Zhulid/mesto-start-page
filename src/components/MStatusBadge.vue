@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-n1">
+  <div>
     <v-badge
       :color="online ? 'lime' : 'grey-purple'"
       bottom
@@ -19,7 +19,7 @@ export default {
   props: {
     online: {
       type: Boolean,
-      required: true,
+      default: false,
     },
   },
 }
